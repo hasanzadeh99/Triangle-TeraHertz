@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="floating_point_0_synth_1" LaunchDir="E:/Other/Dropbox/Rodgel/Projects/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver1/Triangle_Terahertz_FPGA_Ver1.runs/floating_point_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
