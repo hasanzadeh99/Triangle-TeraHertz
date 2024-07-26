@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr  7 18:21:32 2024
+# Process ID: 3256
+# Current directory: D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver2/Triangle_Terahertz_FPGA_Ver2.runs/synth_2
+# Command line: vivado.exe -log ComputeModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ComputeModule.tcl
+# Log file: D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver2/Triangle_Terahertz_FPGA_Ver2.runs/synth_2/ComputeModule.vds
+# Journal file: D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver2/Triangle_Terahertz_FPGA_Ver2.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source ComputeModule.tcl -notrace

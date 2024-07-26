@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ComputeModule_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ComputeModule_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="82672072000fs"></ZoomStartTime>
+      <ZoomEndTime time="90252072001fs"></ZoomEndTime>
+      <Cursor1Time time="88422072000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="187"></NameColumnWidth>
+      <ValueColumnWidth column_width="61"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wave_markers>
+      <marker time="83600000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/ComputeModule_tb/clk_in" type="logic">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/clk_out" type="logic">
+      <obj_property name="ElementShortName">clk_out</obj_property>
+      <obj_property name="ObjectShortName">clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/pulse" type="logic">
+      <obj_property name="ElementShortName">pulse</obj_property>
+      <obj_property name="ObjectShortName">pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/calculate_pulse" type="logic">
+      <obj_property name="ElementShortName">calculate_pulse</obj_property>
+      <obj_property name="ObjectShortName">calculate_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/A" type="array">
+      <obj_property name="ElementShortName">A[11:0]</obj_property>
+      <obj_property name="ObjectShortName">A[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/dividend_tvalid" type="logic">
+      <obj_property name="ElementShortName">dividend_tvalid</obj_property>
+      <obj_property name="ObjectShortName">dividend_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/diviser_tvalid" type="logic">
+      <obj_property name="ElementShortName">diviser_tvalid</obj_property>
+      <obj_property name="ObjectShortName">diviser_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/dout_tvalid" type="logic">
+      <obj_property name="ElementShortName">dout_tvalid</obj_property>
+      <obj_property name="ObjectShortName">dout_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/dout_tdata" type="array">
+      <obj_property name="ElementShortName">dout_tdata[71:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_tdata[71:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/A_squared" type="array">
+      <obj_property name="ElementShortName">A_squared[23:0]</obj_property>
+      <obj_property name="ObjectShortName">A_squared[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/calculate_pulse" type="logic">
+      <obj_property name="ElementShortName">calculate_pulse</obj_property>
+      <obj_property name="ObjectShortName">calculate_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/dividend_tvalid" type="logic">
+      <obj_property name="ElementShortName">dividend_tvalid</obj_property>
+      <obj_property name="ObjectShortName">dividend_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/diviser_tvalid" type="logic">
+      <obj_property name="ElementShortName">diviser_tvalid</obj_property>
+      <obj_property name="ObjectShortName">diviser_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/dout_tvalid" type="logic">
+      <obj_property name="ElementShortName">dout_tvalid</obj_property>
+      <obj_property name="ObjectShortName">dout_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/dout_tdata" type="array">
+      <obj_property name="ElementShortName">dout_tdata[71:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_tdata[71:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/s" type="array">
+      <obj_property name="ElementShortName">s[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/p" type="array">
+      <obj_property name="ElementShortName">p[55:0]</obj_property>
+      <obj_property name="ObjectShortName">p[55:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/A" type="array">
+      <obj_property name="ElementShortName">A[11:0]</obj_property>
+      <obj_property name="ObjectShortName">A[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/A_squared" type="array">
+      <obj_property name="ElementShortName">A_squared[23:0]</obj_property>
+      <obj_property name="ObjectShortName">A_squared[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/s_axis_divisor_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_divisor_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_divisor_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/s_axis_dividend_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_dividend_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_dividend_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/m_axis_dout_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_dout_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dout_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/m_axis_dout_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_dout_tdata[71:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dout_tdata[71:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ComputeModule_tb/UUT/clock_gen_is_ready" type="logic">
+      <obj_property name="ElementShortName">clock_gen_is_ready</obj_property>
+      <obj_property name="ObjectShortName">clock_gen_is_ready</obj_property>
+   </wvobject>
+</wave_config>
