@@ -94,7 +94,7 @@ divider_ip_instance : div_gen_0
                             s <= (others => '0');
                             p <= (others => '0');
                             i <= 0;
-                            A_squared <= (others => '0'); -- Reset squared A value
+--                            A_squared <= (others => '0'); -- Reset squared A value
                             last_pulse <= '0'; -- Reset the last_pulse signal
                             s_axis_divisor_tvalid <= '0';
                             s_axis_dividend_tvalid <= '0';
@@ -102,13 +102,15 @@ divider_ip_instance : div_gen_0
                         else                       
                             case state is
                                 when IDLE =>
-                                    if (pulse = '1' and last_pulse = '0') then
+                                    if (i = 0) then A_squared <= A * A;  -- Resize to ensure the result fits in A_squared
+
+                                    elsif (pulse = '1' and last_pulse = '0') then
                                         if i < 1023 then
                                             i <= i + 1;
-                                            A_squared <= A * A;  -- Resize to ensure the result fits in A_squared
-                                            s <= s + (A*A * i);
-                                            p <= p + A*A;
-        --                                    s<=s*1000;
+--                                            A_squared <= A * A;  -- Resize to ensure the result fits in A_squared
+                                            s <= s + (A_squared * i);
+                                            p <= p + A_squared;
+
                                         end if;
                                     end if;                            
                                     if (calculate_pulse = '1' and last_calculate_pulse = '0') then                                   
