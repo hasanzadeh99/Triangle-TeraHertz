@@ -102,11 +102,10 @@ divider_ip_instance : div_gen_0
                         else                       
                             case state is
                                 when IDLE =>
-                                    if (i = 0) then A_squared <= A * A;  -- Resize to ensure the result fits in A_squared
-
-                                    elsif (pulse = '1' and last_pulse = '0') then
+                                    if (pulse = '1' and last_pulse = '0') then
                                         if i < 1023 then
                                             i <= i + 1;
+                                            A_squared <= A * A;  
 --                                            s <= s + (A_squared * i);
 --                                            p <= p + A_squared;
 
