@@ -107,9 +107,8 @@ divider_ip_instance : div_gen_0
                                     elsif (pulse = '1' and last_pulse = '0') then
                                         if i < 1023 then
                                             i <= i + 1;
---                                            A_squared <= A * A;  -- Resize to ensure the result fits in A_squared
-                                            s <= s + (A_squared * i);
-                                            p <= p + A_squared;
+--                                            s <= s + (A_squared * i);
+--                                            p <= p + A_squared;
 
                                         end if;
                                     end if;                            

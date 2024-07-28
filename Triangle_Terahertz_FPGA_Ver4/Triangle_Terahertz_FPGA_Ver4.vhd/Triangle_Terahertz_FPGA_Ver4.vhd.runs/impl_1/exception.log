@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\Dropbox\Rodgel\Projects\1402\Triangle-TeraHertz\Triangle_Terahertz_FPGA_Ver4\Triangle_Terahertz_FPGA_Ver4.vhd\Triangle_Terahertz_FPGA_Ver4.vhd.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
