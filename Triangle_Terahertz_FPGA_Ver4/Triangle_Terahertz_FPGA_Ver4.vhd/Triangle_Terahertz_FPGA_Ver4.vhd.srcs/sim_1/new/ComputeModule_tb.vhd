@@ -18,7 +18,7 @@ architecture Behavioral of ComputeModule_tb is
             dividend_tvalid  : OUT std_logic;
             diviser_tvalid   : OUT std_logic;
             dout_tvalid      : OUT std_logic;
-            dout_tdata       : OUT std_logic_vector(71 downto 0);
+            dout_tdata       : OUT std_logic_vector(12 downto 0);
             locked           : OUT std_logic
 
         );
@@ -35,7 +35,7 @@ architecture Behavioral of ComputeModule_tb is
     signal dividend_tvalid  : std_logic;
     signal diviser_tvalid   : std_logic;
     signal dout_tvalid      : std_logic;
-    signal dout_tdata       : std_logic_vector(71 downto 0);
+    signal dout_tdata       : std_logic_vector(12 downto 0);
     
     signal locked           : std_logic:= '0';
 

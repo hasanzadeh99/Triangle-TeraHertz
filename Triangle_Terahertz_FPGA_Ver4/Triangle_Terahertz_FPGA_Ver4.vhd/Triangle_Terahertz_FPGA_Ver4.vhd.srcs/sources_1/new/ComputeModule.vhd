@@ -106,8 +106,8 @@ divider_ip_instance : div_gen_0
                                         if i < 1023 then
                                             i <= i + 1;
                                             A_squared <= A * A;  
---                                            s <= s + (A_squared * i);
---                                            p <= p + A_squared;
+                                            s <= s + (A_squared * i);
+                                            p <= p + A_squared;
 
                                         end if;
                                     end if;                            

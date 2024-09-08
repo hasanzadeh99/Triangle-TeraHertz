@@ -168,8 +168,8 @@ architecture tb of tb_div_gen_0 is
   constant IP_dividend_DATA : T_IP_dividend_TABLE := create_ip_dividend_table;
   constant IP_divisor_DATA  : T_IP_divisor_TABLE  := create_ip_divisor_table;
 
-  -- Drive X when data is invalid to highlight data ignored
-  constant INVALID : std_logic := 'X';
+  -- Drive zeros when data is invalid to avoid simulator warnings
+  constant INVALID : std_logic := '0';
 begin
 
   -----------------------------------------------------------------------

@@ -32,13 +32,13 @@ set_property target_language VHDL [current_project]
 set_property ip_output_repo d:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd
-read_ip -quiet D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0.xci
-set_property used_in_implementation false [get_files -all d:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0_ooc.xdc]
-
 read_ip -quiet D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all d:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all d:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all d:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+
+read_ip -quiet D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0.xci
+set_property used_in_implementation false [get_files -all d:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -51,8 +51,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc
 set_property used_in_implementation false [get_files D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc]
 
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
