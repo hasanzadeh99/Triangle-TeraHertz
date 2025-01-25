@@ -185,7 +185,8 @@ divider_ip_instance : div_gen_0
                                             end if;
 
                                             i <= i + 1;
-                                            s <= s + (A_squared * i);
+--                                            s <= s + (A_squared * i);
+                                            s <= X"00000000FFFFFFFF"; -- Assigns a 64-bit hexadecimal value
                                             p <= p + A_squared;
 
                                         end if;
