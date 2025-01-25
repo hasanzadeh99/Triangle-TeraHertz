@@ -1,4 +1,0 @@
-xpm_cdc.sv,systemverilog,xil_defaultlib,D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0"
-xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0"
-clk_wiz_0_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl,incdir="../../../../Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0"
-glbl.v,Verilog,xil_defaultlib,glbl.v

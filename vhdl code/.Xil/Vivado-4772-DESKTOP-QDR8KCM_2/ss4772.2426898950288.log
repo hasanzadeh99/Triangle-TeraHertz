@@ -1,0 +1,21 @@
+srcscan starts
+=============== Using vdb files for VHDL std libs ===========
+INFO: The vhdl library search path for library "std" is now "E:/xilinx/Vivado/2019.1/data/precomp_hsv/vhdl/std" (VHDL-1505)
+INFO: The vhdl library search path for library "synopsys" is now "E:/xilinx/Vivado/2019.1/data/precomp_hsv/vhdl/synopsys" (VHDL-1505)
+INFO: The vhdl library search path for library "ieee" is now "E:/xilinx/Vivado/2019.1/data/precomp_hsv/vhdl/ieee" (VHDL-1505)
+INFO: The vhdl library search path for library "unimacro" is now "E:/xilinx/Vivado/2019.1/data/precomp_hsv/vhdl/unimacro" (VHDL-1505)
+INFO: The vhdl library search path for library "unisim" is now "E:/xilinx/Vivado/2019.1/data/precomp_hsv/vhdl/unisim" (VHDL-1505)
+INFO: The vhdl library search path for library "vl" is now "E:/xilinx/Vivado/2019.1/data/precomp_hsv/vhdl/vl" (VHDL-1505)
+INFO: The vhdl library search path for library "xpm" is now "E:/xilinx/Vivado/2019.1/data/precomp_hsv/vhdl/xpm" (VHDL-1505)
+-- Analyzing VHDL file "E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'ComputeModule' (VHDL-1012)
+INFO: analyzing architecture 'Behavioral' of entity 'computemodule' (VHDL-9006)
+Listing tops:
+VHDLTop: library:xil_defaultlib entity:computemodule arch:
+VHDLTop: library:xil_defaultlib entity:computemodule arch:
+END of tops
+E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd(5): INFO: executing 'ComputeModule_default(Behavioral)' (VHDL-1067)
+E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd(107): WARNING: 'div_gen_0' remains a black-box since it has no binding entity (VHDL-1250)
+E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd(118): WARNING: 'clk_wiz_0' remains a black-box since it has no binding entity (VHDL-1250)
+E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd(130): WARNING: 'ila_0' remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0

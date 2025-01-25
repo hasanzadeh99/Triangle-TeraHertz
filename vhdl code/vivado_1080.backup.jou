@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov  9 16:33:17 2024
+# Process ID: 1080
+# Current directory: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1360 E:\Dropbox\Rodgel\Projects\1402\Triangle-TeraHertz\vhdl code\Triangle_Terahertz_FPGA_Ver4.vhd\Triangle_Terahertz_FPGA_Ver4.vhd.xpr
+# Log file: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd/vivado.log
+# Journal file: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1

@@ -1,0 +1,50 @@
+\t (00:00:00) allegro 17.2 P028 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Jan 26 12:11:10 2022
+\t (00:00:00)         Host=DESKTOP-2QA6CPK User=EBI Pid=8044 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\Users\EBI\Desktop\Sensor\LIB\hdr1x8.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Users/EBI/Desktop/Sensor/LIB/hdr1x8.dra
+\i (00:00:01) trapsize 93169
+\i (00:00:01) trapsize 96493
+\i (00:00:01) trapsize 213678
+   (00:00:01) Loading cmds.cxt 
+\i (00:00:03) zoom in 1 
+\i (00:00:03) setwindow pcb
+\i (00:00:03) zoom in -107.1896 -90.0953
+\i (00:00:03) trapsize 106839
+\i (00:00:03) zoom in 1 
+\i (00:00:03) setwindow pcb
+\i (00:00:03) zoom in -352.9196 -90.0953
+\i (00:00:03) trapsize 53420
+\i (00:00:04) zoom out 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom out -173.4298 -63.3855
+\i (00:00:04) trapsize 106839
+\i (00:00:04) zoom in 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom in 136.4036 15.6755
+\i (00:00:04) trapsize 53420
+\i (00:00:04) zoom in 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom in 186.6180 19.9490
+\i (00:00:04) trapsize 26710
+\i (00:00:06) zoom out 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom out 233.0931 17.2781
+\i (00:00:06) trapsize 53420
+\i (00:00:15) zoom in 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom in 89.9286 0.1838
+\i (00:00:15) trapsize 26710
+\i (00:00:15) zoom in 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom in 93.1338 0.1839
+\i (00:00:15) trapsize 13355
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out 93.6680 -0.3503
+\i (00:00:16) trapsize 26710
+\i (00:19:45) exit 
+\t (00:19:45)     Journal end - Wed Jan 26 12:30:55 2022

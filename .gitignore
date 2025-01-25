@@ -1,0 +1,83 @@
+# Vivado project files
+*.xpr
+*.jou
+*.log
+*.str
+*.zip
+
+# Vivado generated folders
+*.data/
+*.runs/
+*.sim/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.gen/
+*.sdk/
+
+# Vivado generated files
+*.ltx
+*.tcl
+*.xpe
+*.xsa
+*.dcp
+*.wdb
+*.wcfg
+
+# Other temporary files
+*.bak
+*.tmp
+
+STM32F405RG/
+
+# STM32CubeIDE project files to ignore
+*.ac6
+*.launch
+*.log
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.d
+*.list
+*.lst
+*.obj
+*.crash
+*.dep
+*.svd
+*.a
+*.lib
+*.srec
+*.dat
+
+# IDE-specific folders
+Debug/
+Release/
+*.settings/
+.vscode/
+.metadata/
+
+# STM32CubeMX-generated files
+*.ioc
+*.bak
+
+# Generated configuration and build files
+*.cmake
+CMakeFiles/
+CMakeCache.txt
+Makefile
+build/
+
+# Backup and temporary files
+*.backup
+*.tmp
+*.swp
+*~
+
+# macOS-specific system files
+.DS_Store
+
+# Windows-specific system files
+Thumbs.db
+

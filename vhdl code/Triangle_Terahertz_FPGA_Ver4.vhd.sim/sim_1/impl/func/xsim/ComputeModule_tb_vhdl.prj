@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"ComputeModule_tb_func_impl.vhd" \
+"../../../../../Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sim_1/new/ComputeModule_tb.vhd" \
+
+# Do not sort compile order
+nosort

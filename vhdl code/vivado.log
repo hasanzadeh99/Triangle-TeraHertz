@@ -1,0 +1,1255 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov  9 16:39:21 2024
+# Process ID: 4772
+# Current directory: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11600 E:\Dropbox\Rodgel\Projects\1402\Triangle-TeraHertz\vhdl code\Triangle_Terahertz_FPGA_Ver4.vhd.xpr
+# Log file: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/vivado.log
+# Journal file: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.xpr}
+INFO: [Project 1-313] Project file moved from 'E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 825.387 ; gain = 242.031
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  9 16:54:07 2024...
+unched impl_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Nov  9 16:54:01 2024] Launched impl_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Netlist 29-17] Analyzing 1212 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1966.320 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1966.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1966.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 63 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 56 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  SRLC32E => SRL16E: 1 instances
+
+open_run: Time (s): cpu = 00:01:00 ; elapsed = 00:00:46 . Memory (MB): peak = 1966.320 ; gain = 212.137
+open_report: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1966.320 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+close_project
+open_project {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3020.723 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Nov  9 17:13:00 2024] Launched impl_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1212 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3020.723 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3020.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3020.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 63 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 56 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  SRLC32E => SRL16E: 1 instances
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 3020.723 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 3020.723 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+set_property is_loc_fixed false [get_ports [list  {dout_tdata[9]}]]
+set_property is_loc_fixed true [get_ports [list  {dout_tdata[9]}]]
+set_property is_loc_fixed false [get_ports [list  {dout_tdata[9]}]]
+set_property is_loc_fixed true [get_ports [list  {dout_tdata[9]}]]
+set_property is_loc_fixed false [get_ports [list  {dout_tdata[9]}]]
+set_property package_pin "" [get_ports [list  {dout_tdata[9]}]]
+set_property is_loc_fixed true [get_ports [list  {dout_tdata[9]}]]
+set_property package_pin "" [get_ports [list  {dout_tdata[9]}]]
+save_constraints
+place_ports {dout_tdata[9]} A2
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dout_tdata[9]}]]
+save_constraints -force
+set_property is_loc_fixed true [get_ports [list  {dout_tdata[8]}]]
+set_property is_loc_fixed false [get_ports [list  {dout_tdata[8]}]]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Nov  9 17:51:18 2024] Launched synth_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/runme.log
+[Sat Nov  9 17:51:19 2024] Launched impl_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/runme.log
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Nov  9 17:52:36 2024] Launched synth_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/runme.log
+[Sat Nov  9 17:52:36 2024] Launched impl_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1212 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3020.723 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3020.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3020.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 63 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 56 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  SRLC32E => SRL16E: 1 instances
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 3020.723 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 3020.723 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210376B8552DA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3276.324 ; gain = 255.602
+set_property PROGRAM.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+set_property PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.ltx} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.ltx} [get_hw_devices xc7s25_0]
+current_hw_device [get_hw_devices xc7s25_0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+INFO: [Labtools 27-1434] Device xc7s25 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'my_ila_instance' at location 'uuid_DAA5C0EDF1E151E2ACF9D11942CEBC29' from probes file, since it cannot be found on the programmed device.
+create_hw_cfgmem -hw_device [get_hw_devices xc7s25_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+ERROR: [Designutils 20-2514] Invalid LTX file version: 
+set_property PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+INFO: [Labtools 27-2302] Device xc7s25 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Designutils 20-2514] Invalid LTX file version: 
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7s25_0 and the probes file(s) E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit.
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Common 17-39] 'refresh_hw_device' failed due to earlier errors.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~""}]
+ERROR: [Labtools 27-188] Use refresh_hw_device command, with a valid [debug_nets.ltx] file before running this command.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~""}]
+ERROR: [Labtools 27-188] Use refresh_hw_device command, with a valid [debug_nets.ltx] file before running this command.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210376B8552DA
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210376B8552DA
+set_property PROGRAM.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+ERROR: [Designutils 20-2514] Invalid LTX file version: 
+set_property PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+current_hw_device [get_hw_devices xc7s25_0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+INFO: [Labtools 27-1434] Device xc7s25 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Designutils 20-2514] Invalid LTX file version: 
+create_hw_cfgmem -hw_device [get_hw_devices xc7s25_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+ERROR: [Common 17-39] 'refresh_hw_device' failed due to earlier errors.
+set_property PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+INFO: [Labtools 27-2302] Device xc7s25 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:09:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:09:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:09:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:09:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:09:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:09:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:09:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:09:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:09:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:09:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:10:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:10:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:11:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:11:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:12:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:12:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:13:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:13:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:14:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:14:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:15:49
+INFO: [Common 17-14] Message 'Labtools 27-1964' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:15:49
+INFO: [Common 17-14] Message 'Labtools 27-1966' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Common 17-14] Message 'Labtools 27-3304' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+reset_run impl_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+launch_runs impl_1 -jobs 2
+[Sat Nov  9 18:16:26 2024] Launched impl_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/runme.log
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:16:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:16:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:16:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:16:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:16:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:16:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:16:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:16:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:16:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:16:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:16:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:16:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:16:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:16:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:16:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:17:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:17:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:18:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:18:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:19:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:19:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:20:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:20:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:20:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:20:06
+ERROR: [Wavedata 42-487] Failed to write DBG file xsim.dir/snapshot/xsim.dbg.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210376B8552DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210376B8552DA
+INFO: [Labtools 27-1434] Device xc7s25 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Common 17-48] File not found: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/debug_nets.ltx
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Nov  9 18:33:39 2024] Launched synth_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Sat Nov  9 18:35:18 2024] Launched impl_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Nov  9 18:49:52 2024] Launched impl_1...
+Run output will be captured here: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+INFO: [Labtools 27-1434] Device xc7s25 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Common 17-48] File not found: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/debug_nets.ltx
+set_property PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+INFO: [Labtools 27-2302] Device xc7s25 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+WARNING: Simulation object s_axis_divisor_tdata__0_1 was not found in the design.
+WARNING: Simulation object s_axis_divisor_tdata__0_2 was not found in the design.
+WARNING: Simulation object s_axis_divisor_tdata__0_3 was not found in the design.
+WARNING: Simulation object s_axis_divisor_tdata__0 was not found in the design.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:52:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:52:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:53:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:53:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:53:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:53:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:53:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:53:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Nov-09 18:53:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7s25_0] -filter {CELL_NAME=~"my_ila_instance"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Nov-09 18:53:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  9 18:54:17 2024...

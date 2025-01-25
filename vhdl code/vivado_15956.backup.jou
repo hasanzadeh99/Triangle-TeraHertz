@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct  1 18:35:26 2024
+# Process ID: 15956
+# Current directory: D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5596 D:\Dropbox\Rodgel\Projects\1402\Triangle-TeraHertz\Triangle_Terahertz_FPGA_Ver4\Triangle_Terahertz_FPGA_Ver4.vhd\Triangle_Terahertz_FPGA_Ver4.vhd.xpr
+# Log file: D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/vivado.log
+# Journal file: D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+current_hw_device [get_hw_devices xc7s25_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s25_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s25_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+current_hw_device [get_hw_devices xc7s25_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s25_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s25_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s25_0]
+set_property PROGRAM.FILE {D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.bit} [get_hw_devices xc7s25_0]
+program_hw_devices [get_hw_devices xc7s25_0]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
