@@ -2,21 +2,10 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Jan 25 15:56:56 2025
-# Process ID: 3032
+# Start of session at: Sun Jan 26 13:55:16 2025
+# Process ID: 14860
 # Current directory: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1
 # Command line: vivado.exe -log ComputeModule.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ComputeModule.tcl -notrace
 # Log file: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.vdi
 # Journal file: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source ComputeModule.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 354.297 ; gain = 59.879
-Command: link_design -top ComputeModule -part xc7s25csga225-1
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
-INFO: [Device 21-403] Loading part xc7s25csga225-1
-1 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
-link_design failed
-ERROR: [Project 1-68] No files found to match top module 'ComputeModule'
-Resolution: Please verify your EDIF file is named after its top module.  For instance, if the top module is called 'viterbi', name the file 'viterbi.edf'. File naming is case sensitive on Linux.
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 25 15:57:53 2025...

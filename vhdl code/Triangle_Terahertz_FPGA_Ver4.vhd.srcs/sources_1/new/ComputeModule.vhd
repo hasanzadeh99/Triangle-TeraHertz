@@ -35,7 +35,8 @@ architecture Behavioral of ComputeModule is
 
     signal s: UNSIGNED(63 downto 0) := (others => '0');
     signal p: UNSIGNED(55 downto 0) := (others => '0'); 
-    signal i: INTEGER range 0 to 1023 := 0;
+--    signal i: INTEGER range 0 to 1024 := 0;
+    signal i: unsigned(10 downto 0) := (others => '0');
     signal A_squared: UNSIGNED(23 downto 0) := (others => '0'); -- Holds squared A value, considering overflow
     signal last_pulse: STD_LOGIC := '0'; -- Signal to hold the previous state of pulse
     signal last_calculate_pulse : STD_LOGIC :='0';
@@ -51,7 +52,6 @@ architecture Behavioral of ComputeModule is
     signal state: state_type := IDLE;
     
     
-    signal state_vector : std_logic_vector(1 downto 0); -- 2-bit vector to represent state
 
     
     constant CLOCK_FREQUENCY : integer := 120000000;  -- 120 MHz clock
@@ -72,7 +72,6 @@ architecture Behavioral of ComputeModule is
     
     signal flag_data_ready : STD_LOGIC := '0'; -- Intermediate signal
     signal data_ready_sig : STD_LOGIC := '0'; -- Intermediate signal
-  
     
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT div_gen_0
@@ -126,7 +125,7 @@ divider_ip_instance : div_gen_0
 
  -- INST_TAG_END ------ End INSTANTIATION Template ---------
 --    locked <= clock_gen_is_ready;
---    A_squared <= A * A; 
+    A_squared <= A * A; 
 --    A_squared <= x"71B8E4";
 --    A_squared <= to_unsigned(16777025, 24); -- Max value of A^2 for 12-bit A
 
@@ -141,7 +140,7 @@ divider_ip_instance : div_gen_0
                     
             s <= (others => '0');
             p <= (others => '0');
-            i <= 0;
+            i <= "00000000000";  -- Using numeric_std
 
             last_pulse <= '0';                     -- Reset the last_pulse signal
             s_axis_divisor_tvalid <= '0';
@@ -177,27 +176,29 @@ divider_ip_instance : div_gen_0
 
                                         if i <= 1022 then
                                         
-                                            if(i = 100) then
-                                                 A_squared <= x"01B8E4";
+--                                            if(i = 100) then
+--                                                 A_squared <= x"01B8E4";
                                                 
-                                            else     A_squared <= x"000000";
+--                                            else     A_squared <= x"000000";
                                
-                                            end if;
+--                                            end if;
 
                                             i <= i + 1;
---                                            s <= s + (A_squared * i);
-                                            s <= X"00000000FFFFFFFF"; -- Assigns a 64-bit hexadecimal value
+                                            s <= s + (A_squared * i);       
                                             p <= p + A_squared;
+                                      
+                                      end if;
+                                      
 
-                                        end if;
-                                    end if;                                    
+
+                                    
+                                   end if;
                                                                                
---                                        dout_tdata <= std_logic_vector(resize(unsigned(A), 20));
                                                                      
                                     if(i= 1023) then                                      
                                         s_axis_divisor_tvalid <= '1';
                                         s_axis_dividend_tvalid <= '1';
-                                        i <= 0;
+                                        i <= "00000000000";
                                         flag_data_ready <= '0';
                                         state <= WAIT_RESULT;
                                     end if;
@@ -206,10 +207,10 @@ divider_ip_instance : div_gen_0
                                 
                                         if m_axis_dout_tvalid = '1' then
                                         
---                                            dout_tdata <= m_axis_dout_tdata(19 downto 0);
+                                            dout_tdata <= m_axis_dout_tdata(19 downto 0);
 --                                            dout_tdata <= "11111000000000000111";
 --                                            dout_tdata <= std_logic_vector(A_squared(19 downto 0));         
-                                            dout_tdata <= std_logic_vector(s(19 downto 0));  
+--                                            dout_tdata <= std_logic_vector(s(19 downto 0));  
                                                    
                                             state <= RESET_STATE;    
                                             
@@ -226,7 +227,7 @@ divider_ip_instance : div_gen_0
 
                                         s <= (others => '0');
                                         p <= (others => '0');
-                                        i <= 0;
+                                        i <= "00000000000";
    --                                     A_squared <= (others => '0'); -- Reset squared A value
                                         last_pulse <= '0'; -- Reset the last_pulse signal
                                         s_axis_divisor_tvalid <= '0';

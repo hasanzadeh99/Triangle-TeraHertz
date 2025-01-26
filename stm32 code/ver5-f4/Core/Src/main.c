@@ -59,6 +59,7 @@ static void MX_TIM3_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 float value=0;
+uint32_t raw = 0;
 
 /* USER CODE END 0 */
 
@@ -147,6 +148,7 @@ int main(void)
 // 	        	 raw_data++;
 // 	         }
 
+ 	         raw=raw_data;
  	         uint8_t fraction = raw_data & 0x7F;   // Extract data0 to data6 (7 bits)
  	         uint16_t integer = (raw_data >> 7);  // Extract data7 to data16 (10 bits)
 
