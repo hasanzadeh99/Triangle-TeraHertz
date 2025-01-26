@@ -9,3 +9,4 @@
 # Log file: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1/ComputeModule.vdi
 # Journal file: E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
+source ComputeModule.tcl -notrace
