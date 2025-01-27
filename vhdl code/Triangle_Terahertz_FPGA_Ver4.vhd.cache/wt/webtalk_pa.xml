@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun Jan 26 18:57:07 2025">
+<application name="pa" timeStamp="Mon Jan 27 09:31:18 2025">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="864c2f00c0194094bfac1f14fa7c7dc9" type="ProjectID"/>
-<property name="ProjectIteration" value="333" type="ProjectIteration"/>
+<property name="ProjectIteration" value="334" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -53,7 +53,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ReportTiming" value="2" type="JavaHandler"/>
 <property name="ReportTimingSummary" value="18" type="JavaHandler"/>
 <property name="ReportUtilization" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="235" type="JavaHandler"/>
+<property name="RunBitgen" value="236" type="JavaHandler"/>
 <property name="RunImplementation" value="170" type="JavaHandler"/>
 <property name="RunSchematic" value="6" type="JavaHandler"/>
 <property name="RunSynthesis" value="39" type="JavaHandler"/>
@@ -102,7 +102,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="BaseDialog_CANCEL" value="165" type="GuiHandlerData"/>
 <property name="BaseDialog_NO" value="6" type="GuiHandlerData"/>
 <property name="BaseDialog_OK" value="1000" type="GuiHandlerData"/>
-<property name="BaseDialog_YES" value="190" type="GuiHandlerData"/>
+<property name="BaseDialog_YES" value="191" type="GuiHandlerData"/>
 <property name="CfgMemPartChooser_TABLE" value="10" type="GuiHandlerData"/>
 <property name="CheckTimingResultTreeTablePanel_CHECK_TIMING_RESULT_TREE_TABLE" value="7" type="GuiHandlerData"/>
 <property name="CheckTimingSectionPanel_CHECK_TIMING_SELECTION_TABLE" value="3" type="GuiHandlerData"/>
@@ -138,9 +138,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ExpRunMenu_LAUNCH_STEP" value="1" type="GuiHandlerData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="39" type="GuiHandlerData"/>
 <property name="FPGAChooser_FPGA_TABLE" value="3" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="1244" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="1251" type="GuiHandlerData"/>
 <property name="FilterToolBar_SHOW_ALL" value="1" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="931" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="932" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_RESET_IMPLEMENTATION_RUN" value="2" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_RESET_SYNTHESIS_RUN" value="4" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
@@ -380,7 +380,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="StaleRunDialog_RUN_SYNTHESIS" value="1" type="GuiHandlerData"/>
 <property name="StaleRunDialog_YES" value="2" type="GuiHandlerData"/>
 <property name="StateMonitor_RESET_RUN" value="5" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="103" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="104" type="GuiHandlerData"/>
 <property name="SyntheticaStateMonitor_CANCEL" value="19" type="GuiHandlerData"/>
 <property name="SystemTreeView_SYSTEM_TREE" value="8" type="GuiHandlerData"/>
 <property name="TaskBanner_CLOSE" value="75" type="GuiHandlerData"/>
@@ -447,11 +447,6 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XdcTableEditorsPanel_EDIT_EXISTING_TIMING_CONSTRAINT" value="1" type="GuiHandlerData"/>
 <property name="XdcViewerTreeTablePanel_XDC_VIEWER_TREE_TABLE" value="38" type="GuiHandlerData"/>
 <property name="selectComboBox(Optimize Goal (OptimizeGoal)" value="4" type="GuiHandlerData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="63" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="50" type="TclMode"/>
 </item>
 </section>
 </application>
