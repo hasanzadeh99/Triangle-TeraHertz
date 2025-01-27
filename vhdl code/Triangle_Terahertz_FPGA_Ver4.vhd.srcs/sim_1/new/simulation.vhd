@@ -113,7 +113,7 @@ BEGIN
             n_monitor <= n;  -- Update monitoring signal
             
             
-            if(n = 900) then
+            if(n = 100) then
                 A <= "101010101010";  -- Example input 
                 
             else A <= "000000000010";  -- Example input

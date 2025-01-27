@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="182941670000fs"></ZoomStartTime>
-      <ZoomEndTime time="183027870001fs"></ZoomEndTime>
-      <Cursor1Time time="183006303000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="645500000001fs"></ZoomEndTime>
+      <Cursor1Time time="172000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="198"></NameColumnWidth>
-      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="12" />
    <wvobject fp_name="/simulation/clk_in" type="logic">
       <obj_property name="ElementShortName">clk_in</obj_property>
       <obj_property name="ObjectShortName">clk_in</obj_property>
@@ -31,10 +31,6 @@
    <wvobject fp_name="/simulation/pulse" type="logic">
       <obj_property name="ElementShortName">pulse</obj_property>
       <obj_property name="ObjectShortName">pulse</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simulation/UUT/divider_ip_instance/aclk" type="logic">
-      <obj_property name="ElementShortName">aclk</obj_property>
-      <obj_property name="ObjectShortName">aclk</obj_property>
    </wvobject>
    <wvobject fp_name="/simulation/calculate_pulse" type="logic">
       <obj_property name="ElementShortName">calculate_pulse</obj_property>
@@ -52,29 +48,9 @@
       <obj_property name="ElementShortName">p[55:0]</obj_property>
       <obj_property name="ObjectShortName">p[55:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/simulation/UUT/i" type="other">
-      <obj_property name="ElementShortName">i</obj_property>
-      <obj_property name="ObjectShortName">i</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simulation/UUT/divider_ip_instance/s_axis_divisor_tvalid" type="logic">
-      <obj_property name="ElementShortName">s_axis_divisor_tvalid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_divisor_tvalid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simulation/UUT/divider_ip_instance/s_axis_dividend_tvalid" type="logic">
-      <obj_property name="ElementShortName">s_axis_dividend_tvalid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_dividend_tvalid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simulation/UUT/divider_ip_instance/m_axis_dout_tvalid" type="logic">
-      <obj_property name="ElementShortName">m_axis_dout_tvalid</obj_property>
-      <obj_property name="ObjectShortName">m_axis_dout_tvalid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simulation/UUT/divider_ip_instance/m_axis_dout_tdata" type="array">
-      <obj_property name="ElementShortName">m_axis_dout_tdata[71:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_dout_tdata[71:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">7</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+   <wvobject fp_name="/simulation/UUT/i" type="array">
+      <obj_property name="ElementShortName">i[10:0]</obj_property>
+      <obj_property name="ObjectShortName">i[10:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/simulation/dout_tdata" type="array">
       <obj_property name="ElementShortName">dout_tdata[19:0]</obj_property>
@@ -87,10 +63,6 @@
    <wvobject fp_name="/simulation/UUT/state" type="other">
       <obj_property name="ElementShortName">state</obj_property>
       <obj_property name="ObjectShortName">state</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simulation/UUT/clock_gen_is_ready" type="logic">
-      <obj_property name="ElementShortName">clock_gen_is_ready</obj_property>
-      <obj_property name="ObjectShortName">clock_gen_is_ready</obj_property>
    </wvobject>
    <wvobject fp_name="/simulation/m_monitor" type="other">
       <obj_property name="ElementShortName">m_monitor</obj_property>

@@ -31,7 +31,8 @@ architecture Behavioral of ComputeModule is
     signal last_calculate_pulse  : STD_LOGIC := '0';
     signal calculation_active    : STD_LOGIC := '0';
     signal data_ready_internal   : STD_LOGIC := '0';
-    
+    signal last_A               : UNSIGNED(11 downto 0) := (others => '0');
+    signal A_changed            : STD_LOGIC := '0';
     -- LED control signals
     signal led_0_reg            : STD_LOGIC := '0';
     signal led_1_reg            : STD_LOGIC := '0';
@@ -98,18 +99,15 @@ begin
         );
 
     -- Continuous assignments
-    
-
-    
-    
     A_squared <= A * A;
     divisor_data <= std_logic_vector(p);
     dividend_data <= std_logic_vector(s);
     data_ready <= data_ready_internal;
+    A_changed <= '1' when A /= last_A else '0';
     
     -- Connect LED registers to outputs
     led_0 <= led_0_reg;
-    led_1 <= led_1_reg;
+    led_1 <= A_changed;  -- LED1 directly shows A changes
     led_2 <= led_2_reg;
     led_3 <= led_3_reg;
 
@@ -150,25 +148,32 @@ begin
                     end if;
 
                 when ACCUMULATE =>
+                    -- Check if A has changed
+                    if A /= last_A then
+                        led_1_reg <= '1';  -- Light up LED1 when A changes
+                    else
+                        led_1_reg <= '0';  -- Turn off LED1 when A is stable
+                    end if;
+                    last_A <= A;  -- Update last_A value
+                    
                     if pulse = '1' and last_pulse = '0' and calculation_active = '1' then
                         if i <= 1023 then
-                        
                             i <= i + 1;
-                            s <= s + (A_squared * i);
-                            p <= p + A_squared;
-                            led_1_reg <= not led_1_reg; -- Toggle to show activity
+                            s <= s + (A * i);
+                            p <= p + A;
+                            led_2_reg <= not led_2_reg; -- Toggle to show calculation activity
                         else
                             state <= DIVIDE;
                             divisor_valid <= '1';
                             dividend_valid <= '1';
-                            led_2_reg <= '1'; -- Indicate division started
+                            led_3_reg <= '1'; -- Indicate division started
                         end if;
                     end if;
 
                 when DIVIDE =>
                     if dout_valid = '1' then
---                        dout_tdata <= dout_data(19 downto 0);
-                        dout_tdata <= std_logic_vector(resize(A, 20));
+--                        dout_tdata <= std_logic_vector(resize(A, 20));
+                          dout_tdata <= dout_data(19 downto 0);
 
                         data_ready_internal <= not data_ready_internal;
                         state <= OUTPUT;

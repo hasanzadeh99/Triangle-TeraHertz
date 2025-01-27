@@ -1,2 +1,4 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'ComputeModule'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sim_1/new/simulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'simulation'
