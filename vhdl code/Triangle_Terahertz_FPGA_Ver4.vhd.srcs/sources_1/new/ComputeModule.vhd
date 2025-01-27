@@ -2,196 +2,151 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity ComputeModule is
-    Port (   
-        clk_in          : in  STD_LOGIC;
-        reset           : in  STD_LOGIC;
-        pulse           : in  STD_LOGIC;
-        calculate_pulse : in  STD_LOGIC;
-        A               : in  UNSIGNED(11 downto 0);
-        dout_tdata      : out STD_LOGIC_VECTOR(19 DOWNTO 0);
-        data_ready      : out STD_LOGIC;
-        -- Status LEDs
-        led_0           : out STD_LOGIC;
-        led_1           : out STD_LOGIC;
-        led_2           : out STD_LOGIC;
-        led_3           : out STD_LOGIC
+entity uart_system is
+    Port (
+        clk           : in  STD_LOGIC;
+        reset         : in  STD_LOGIC;
+        uart_tx_pin   : out STD_LOGIC;
+        -- Debug LEDs
+        led_0         : out STD_LOGIC;
+        led_1         : out STD_LOGIC;
+        led_2         : out STD_LOGIC;
+        led_3         : out STD_LOGIC
     );
-end ComputeModule;
+end uart_system;
 
-architecture Behavioral of ComputeModule is
-    -- Internal signals for calculation
-    signal s                      : UNSIGNED(63 downto 0);
-    signal p                      : UNSIGNED(55 downto 0);
-    signal i                      : UNSIGNED(10 downto 0);
-    signal A_squared              : UNSIGNED(23 downto 0);
+architecture Behavioral of uart_system is
+    -- Constants for UART configuration
+    constant CLK_FREQ    : integer := 100_000_000;  -- 100 MHz
+    constant BAUD_RATE   : integer := 115_200;
+    constant BIT_PERIOD  : integer := CLK_FREQ / BAUD_RATE;
     
-    -- Control signals
-    signal last_pulse            : STD_LOGIC := '0';
-    signal last_calculate_pulse  : STD_LOGIC := '0';
-    signal calculation_active    : STD_LOGIC := '0';
-    signal data_ready_internal   : STD_LOGIC := '0';
-    signal last_A               : UNSIGNED(11 downto 0) := (others => '0');
-    signal A_changed            : STD_LOGIC := '0';
-    -- LED control signals
-    signal led_0_reg            : STD_LOGIC := '0';
-    signal led_1_reg            : STD_LOGIC := '0';
-    signal led_2_reg            : STD_LOGIC := '0';
-    signal led_3_reg            : STD_LOGIC := '0';
+    -- UART transmitter states
+    type uart_state_type is (IDLE, START_BIT, DATA_BITS, STOP_BIT);
+    signal uart_state : uart_state_type := IDLE;
     
-    -- Clock and reset signals
-    signal clk_out              : STD_LOGIC;
-    signal clock_gen_ready      : STD_LOGIC;
+    -- UART control signals
+    signal tx_start      : STD_LOGIC := '0';
+    signal tx_busy       : STD_LOGIC := '0';
+    signal tx_done       : STD_LOGIC := '0';
+    signal tx_data       : STD_LOGIC_VECTOR(7 downto 0) := x"41"; -- Default 'A'
+    signal uart_tx_reg   : STD_LOGIC := '1';  -- Internal register for UART TX
     
-    -- Divider interface signals
-    signal divisor_valid        : STD_LOGIC;
-    signal dividend_valid       : STD_LOGIC;
-    signal divisor_data         : STD_LOGIC_VECTOR(55 downto 0);
-    signal dividend_data        : STD_LOGIC_VECTOR(63 downto 0);
-    signal dout_valid          : STD_LOGIC;
-    signal dout_data           : STD_LOGIC_VECTOR(71 downto 0);
+    -- Counters and internal registers
+    signal bit_counter   : integer range 0 to 7 := 0;
+    signal period_counter: integer range 0 to BIT_PERIOD-1 := 0;
+    signal tx_data_reg   : STD_LOGIC_VECTOR(7 downto 0);
     
-    -- State machine definition
-    type state_type is (IDLE, ACCUMULATE, DIVIDE, OUTPUT);
-    signal state               : state_type;
-
-    -- Component declarations
-    component div_gen_0
-        port (
-            aclk                    : in  STD_LOGIC;
-            s_axis_divisor_tvalid   : in  STD_LOGIC;
-            s_axis_divisor_tdata    : in  STD_LOGIC_VECTOR(55 downto 0);
-            s_axis_dividend_tvalid  : in  STD_LOGIC;
-            s_axis_dividend_tdata   : in  STD_LOGIC_VECTOR(63 downto 0);
-            m_axis_dout_tvalid     : out STD_LOGIC;
-            m_axis_dout_tdata      : out STD_LOGIC_VECTOR(71 downto 0)
-        );
-    end component;
-
-    component clk_wiz_0
-        port (
-            clk_out    : out STD_LOGIC;
-            reset      : in  STD_LOGIC;
-            locked     : out STD_LOGIC;
-            clk_in     : in  STD_LOGIC
-        );
-    end component;
+    -- Test pattern signals
+    signal send_counter  : integer range 0 to CLK_FREQ := 0;  -- 1-second counter
+    signal test_pattern  : STD_LOGIC_VECTOR(31 downto 0) := x"41424344"; -- "ABCD"
+    signal pattern_index : integer range 0 to 3 := 0;
 
 begin
-    -- Component instantiations
-    divider: div_gen_0
-        port map (
-            aclk                    => clk_out,
-            s_axis_divisor_tvalid   => divisor_valid,
-            s_axis_divisor_tdata    => divisor_data,
-            s_axis_dividend_tvalid  => dividend_valid,
-            s_axis_dividend_tdata   => dividend_data,
-            m_axis_dout_tvalid     => dout_valid,
-            m_axis_dout_tdata      => dout_data
-        );
+    -- Connect internal register to output pin
+    uart_tx_pin <= uart_tx_reg;
 
-    clock_gen: clk_wiz_0
-        port map (
-            clk_out    => clk_out,
-            reset      => reset,
-            locked     => clock_gen_ready,
-            clk_in     => clk_in
-        );
-
-    -- Continuous assignments
-    A_squared <= A * A;
-    divisor_data <= std_logic_vector(p);
-    dividend_data <= std_logic_vector(s);
-    data_ready <= data_ready_internal;
-    A_changed <= '1' when A /= last_A else '0';
-    
-    -- Connect LED registers to outputs
-    led_0 <= led_0_reg;
-    led_1 <= A_changed;  -- LED1 directly shows A changes
-    led_2 <= led_2_reg;
-    led_3 <= led_3_reg;
-
-    -- Main process
-    process(clk_out, reset)
+    -- Main UART transmission process
+    process(clk, reset)
     begin
         if reset = '1' then
-            state <= IDLE;
-            s <= (others => '0');
-            p <= (others => '0');
-            i <= (others => '0');
-            calculation_active <= '0';
-            data_ready_internal <= '0';
-            divisor_valid <= '0';
-            dividend_valid <= '0';
+            uart_state <= IDLE;
+            uart_tx_reg <= '1';  -- Line idle state is high
+            tx_busy <= '0';
+            tx_done <= '0';
+            bit_counter <= 0;
+            period_counter <= 0;
+            led_0 <= '0';
+            led_1 <= '0';
+            led_2 <= '0';
+            led_3 <= '0';
             
-            -- Reset LED registers
-            led_0_reg <= '0';
-            led_1_reg <= '0';
-            led_2_reg <= '0';
-            led_3_reg <= '0';
+        elsif rising_edge(clk) then
+            -- Default LED states
+            led_0 <= tx_busy;      -- Shows when transmitting
+            led_1 <= uart_tx_reg;  -- Shows actual UART output
+            led_2 <= '0';
+            led_3 <= tx_done;      -- Pulses when byte is sent
             
-        elsif rising_edge(clk_out) and clock_gen_ready = '1' then
-            -- Default assignments
-            last_pulse <= pulse;
-            last_calculate_pulse <= calculate_pulse;
-            
-            case state is
+            case uart_state is
                 when IDLE =>
-                    if calculate_pulse = '1' and last_calculate_pulse = '0' then
-                        calculation_active <= '1';
-                        state <= ACCUMULATE;
-                        -- Initialize calculation variables
-                        s <= (others => '0');
-                        p <= (others => '0');
-                        i <= (others => '0');
-                        led_0_reg <= '1'; -- Indicate calculation started
+                    uart_tx_reg <= '1';
+                    tx_done <= '0';
+                    
+                    if tx_start = '1' then
+                        uart_state <= START_BIT;
+                        tx_data_reg <= tx_data;
+                        tx_busy <= '1';
+                        period_counter <= 0;
+                        led_2 <= '1';  -- Indicates start of new byte
                     end if;
 
-                when ACCUMULATE =>
-                    -- Check if A has changed
-                    if A /= last_A then
-                        led_1_reg <= '1';  -- Light up LED1 when A changes
-                    else
-                        led_1_reg <= '0';  -- Turn off LED1 when A is stable
-                    end if;
-                    last_A <= A;  -- Update last_A value
+                when START_BIT =>
+                    uart_tx_reg <= '0';
                     
-                    if pulse = '1' and last_pulse = '0' and calculation_active = '1' then
-                        if i <= 1023 then
-                            i <= i + 1;
-                            s <= s + (A * i);
-                            p <= p + A;
-                            led_2_reg <= not led_2_reg; -- Toggle to show calculation activity
+                    if period_counter < BIT_PERIOD-1 then
+                        period_counter <= period_counter + 1;
+                    else
+                        uart_state <= DATA_BITS;
+                        period_counter <= 0;
+                        bit_counter <= 0;
+                    end if;
+
+                when DATA_BITS =>
+                    uart_tx_reg <= tx_data_reg(bit_counter);
+                    
+                    if period_counter < BIT_PERIOD-1 then
+                        period_counter <= period_counter + 1;
+                    else
+                        period_counter <= 0;
+                        
+                        if bit_counter < 7 then
+                            bit_counter <= bit_counter + 1;
                         else
-                            state <= DIVIDE;
-                            divisor_valid <= '1';
-                            dividend_valid <= '1';
-                            led_3_reg <= '1'; -- Indicate division started
+                            uart_state <= STOP_BIT;
                         end if;
                     end if;
 
-                when DIVIDE =>
-                    if dout_valid = '1' then
---                        dout_tdata <= std_logic_vector(resize(A, 20));
-                          dout_tdata <= dout_data(19 downto 0);
-
-                        data_ready_internal <= not data_ready_internal;
-                        state <= OUTPUT;
-                        led_3_reg <= '1'; -- Indicate result ready
+                when STOP_BIT =>
+                    uart_tx_reg <= '1';
+                    
+                    if period_counter < BIT_PERIOD-1 then
+                        period_counter <= period_counter + 1;
+                    else
+                        uart_state <= IDLE;
+                        tx_busy <= '0';
+                        tx_done <= '1';
                     end if;
-
-                when OUTPUT =>
-                    -- Reset for next calculation
-                    divisor_valid <= '0';
-                    dividend_valid <= '0';
-                    calculation_active <= '0';
-                    state <= IDLE;
-                    -- Reset LEDs for next cycle
-                    led_0_reg <= '0';
-                    led_1_reg <= '0';
-                    led_2_reg <= '0';
-                    led_3_reg <= '0';
             end case;
+        end if;
+    end process;
+
+    -- Test pattern generation process
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            send_counter <= 0;
+            pattern_index <= 0;
+            tx_start <= '0';
+            
+        elsif rising_edge(clk) then
+            tx_start <= '0';  -- Default state
+            
+            if tx_busy = '0' then  -- Only start new transmission when not busy
+                if send_counter < CLK_FREQ/4 then  -- Send every 0.25 seconds
+                    send_counter <= send_counter + 1;
+                else
+                    send_counter <= 0;
+                    tx_data <= test_pattern(31-8*pattern_index downto 24-8*pattern_index);
+                    tx_start <= '1';
+                    
+                    if pattern_index < 3 then
+                        pattern_index <= pattern_index + 1;
+                    else
+                        pattern_index <= 0;
+                    end if;
+                end if;
+            end if;
         end if;
     end process;
 
