@@ -30,10 +30,10 @@ vmap xbip_dsp48_multadd_v3_0_6 riviera/xbip_dsp48_multadd_v3_0_6
 vmap div_gen_v5_1_15 riviera/div_gen_v5_1_15
 
 vlog -work xil_defaultlib  -sv2k12 \
-"D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"E:/xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 
 vcom -work xpm -93 \
-"D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
+"E:/xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xbip_utils_v3_0_10 -93 \
 "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \

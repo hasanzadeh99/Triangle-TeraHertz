@@ -30,10 +30,10 @@ vmap xbip_dsp48_multadd_v3_0_6 questa_lib/msim/xbip_dsp48_multadd_v3_0_6
 vmap div_gen_v5_1_15 questa_lib/msim/div_gen_v5_1_15
 
 vlog -work xil_defaultlib -64 -sv \
-"D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"E:/xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 
 vcom -work xpm -64 -93 \
-"D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
+"E:/xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xbip_utils_v3_0_10 -64 -93 \
 "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \

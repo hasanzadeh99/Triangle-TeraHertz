@@ -105,19 +105,30 @@ BEGIN
 --        wait for 10 ns;  -- Hold pulse for 100 ns
 --        pulse <= '0';     -- Deassert pulse
 --        wait for 10 ns;  -- Hold pulse for 100 ns 
+
+        calculate_pulse <= '0';
+        wait for 250 ns;  -- Hold pulse for 100 ns
+      
+        
         
    for m in 0 to 1023 loop  
        m_monitor <= m;  -- Update monitoring signal
+       
+
+        
+        calculate_pulse <= '1';
+        wait for 300 ns;  -- Hold pulse for 100 ns
+        
   
         for n in 0 to 1023 loop  -- Loop 1024 times (0 to 1023)
             n_monitor <= n;  -- Update monitoring signal
             
-            
+--            A <= std_logic_vector(to_unsigned(n, A'length));
+--            A <= to_unsigned(2, A'length); -- For example, to assign the unsigned value '2' to A
+            A <= to_unsigned(n, A'length);
+
             if(n = 100) then
                 A <= "101010101010";  -- Example input 
-                
-            else A <= "000000000010";  -- Example input
-
             end if;
 
             wait for 50 ns;
@@ -128,11 +139,26 @@ BEGIN
         end loop;
         
         
-        calculate_pulse <= '0';
-        wait for 250 ns;  -- Hold pulse for 100 ns
         
-        calculate_pulse <= '1';
-        wait for 300 ns;  -- Hold pulse for 100 ns
+        for n in 0 to 100 loop  -- Loop 1024 times (0 to 1023)
+            n_monitor <= n;  -- Update monitoring signal
+            
+--            A <= std_logic_vector(to_unsigned(n, A'length));
+--            A <= to_unsigned(2, A'length); -- For example, to assign the unsigned value '2' to A
+            A <= to_unsigned(115, A'length);
+
+            wait for 50 ns;
+            pulse <= '1';
+            wait for 50 ns;  -- Hold pulse for 10 ns
+            pulse <= '0';     -- Deassert pulse
+            
+        end loop;
+        
+        
+     
+        calculate_pulse <= '0';
+        wait for 250 ns;  -- Hold pulse for 100 ns   
+
         
    end loop;
       

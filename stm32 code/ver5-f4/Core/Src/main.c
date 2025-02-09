@@ -142,13 +142,16 @@ int main(void)
 
  	         // Extract fractional and integer parts
 
-// 	         raw_data=53425;
-// 	         if(raw_data == 0) {
-//
-// 	        	 raw_data++;
-// 	         }
+
 
  	         raw=raw_data;
+
+			 if(raw < 400 ) {
+
+				 raw_data++;
+			 }
+
+
  	         uint8_t fraction = raw_data & 0x7F;   // Extract data0 to data6 (7 bits)
  	         uint16_t integer = (raw_data >> 7);  // Extract data7 to data16 (10 bits)
 

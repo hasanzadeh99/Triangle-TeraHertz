@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2024 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -142,7 +142,7 @@ BEGIN
       C_XDEVICEFAMILY => "spartan7",
       C_HAS_ARESETN => 0,
       C_HAS_ACLKEN => 0,
-      C_LATENCY => 40,
+      C_LATENCY => 74,
       ALGORITHM_TYPE => 1,
       DIVISOR_WIDTH => 56,
       DIVIDEND_WIDTH => 64,

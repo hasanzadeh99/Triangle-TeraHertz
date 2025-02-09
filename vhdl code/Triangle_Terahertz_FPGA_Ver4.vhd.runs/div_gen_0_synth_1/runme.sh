@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Xilinx/SDK/2019.1/bin;D:/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2019.1/bin
+  PATH=E:/xilinx/SDK/2019.1/bin;E:/xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;E:/xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:E:/xilinx/Vivado/2019.1/bin
 else
-  PATH=D:/Xilinx/SDK/2019.1/bin;D:/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2019.1/bin:$PATH
+  PATH=E:/xilinx/SDK/2019.1/bin;E:/xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;E:/xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:E:/xilinx/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/Triangle_Terahertz_FPGA_Ver4/Triangle_Terahertz_FPGA_Ver4.vhd/Triangle_Terahertz_FPGA_Ver4.vhd.runs/div_gen_0_synth_1'
+HD_PWD='E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/div_gen_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
