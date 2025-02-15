@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -78,6 +77,7 @@ set rc [catch {
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet {{E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/ComputeModule.dcp}}
   read_ip -quiet {{E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+  read_ip -quiet {{E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}
   read_xdc {{E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc}}
   link_design -top ComputeModule -part xc7s25csga225-1
   close_msg_db -file init_design.pb

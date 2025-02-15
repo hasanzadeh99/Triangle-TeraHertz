@@ -146,10 +146,7 @@ int main(void)
 
  	         raw=raw_data;
 
-			 if(raw < 400 ) {
 
-				 raw_data++;
-			 }
 
 
  	         uint8_t fraction = raw_data & 0x7F;   // Extract data0 to data6 (7 bits)
@@ -161,7 +158,10 @@ int main(void)
 
 // 	         value = raw_data;
 
+			 if(value = 123 ) {
 
+				 raw_data++;
+			 }
 
 // 	         	         value=value+1;
 // 	         	         value=13.87;

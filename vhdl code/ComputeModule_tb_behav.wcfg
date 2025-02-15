@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="645500000001fs"></ZoomEndTime>
-      <Cursor1Time time="172000000000fs"></Cursor1Time>
+      <ZoomEndTime time="1627332665334fs"></ZoomEndTime>
+      <Cursor1Time time="506569604000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="198"></NameColumnWidth>
-      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/simulation/clk_in" type="logic">
       <obj_property name="ElementShortName">clk_in</obj_property>
       <obj_property name="ObjectShortName">clk_in</obj_property>
@@ -40,17 +40,13 @@
       <obj_property name="ElementShortName">A[11:0]</obj_property>
       <obj_property name="ObjectShortName">A[11:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/simulation/UUT/s" type="array">
-      <obj_property name="ElementShortName">s[63:0]</obj_property>
-      <obj_property name="ObjectShortName">s[63:0]</obj_property>
+   <wvobject fp_name="/simulation/UUT/S" type="array">
+      <obj_property name="ElementShortName">S[63:0]</obj_property>
+      <obj_property name="ObjectShortName">S[63:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/simulation/UUT/p" type="array">
-      <obj_property name="ElementShortName">p[55:0]</obj_property>
-      <obj_property name="ObjectShortName">p[55:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simulation/UUT/i" type="array">
-      <obj_property name="ElementShortName">i[10:0]</obj_property>
-      <obj_property name="ObjectShortName">i[10:0]</obj_property>
+   <wvobject fp_name="/simulation/UUT/P" type="array">
+      <obj_property name="ElementShortName">P[55:0]</obj_property>
+      <obj_property name="ObjectShortName">P[55:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/simulation/dout_tdata" type="array">
       <obj_property name="ElementShortName">dout_tdata[19:0]</obj_property>
@@ -60,10 +56,6 @@
       <obj_property name="radix_fractionWidth">7</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/simulation/UUT/state" type="other">
-      <obj_property name="ElementShortName">state</obj_property>
-      <obj_property name="ObjectShortName">state</obj_property>
-   </wvobject>
    <wvobject fp_name="/simulation/m_monitor" type="other">
       <obj_property name="ElementShortName">m_monitor</obj_property>
       <obj_property name="ObjectShortName">m_monitor</obj_property>
@@ -71,5 +63,9 @@
    <wvobject fp_name="/simulation/n_monitor" type="other">
       <obj_property name="ElementShortName">n_monitor</obj_property>
       <obj_property name="ObjectShortName">n_monitor</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulation/UUT/data_ready" type="logic">
+      <obj_property name="ElementShortName">data_ready</obj_property>
+      <obj_property name="ObjectShortName">data_ready</obj_property>
    </wvobject>
 </wave_config>
