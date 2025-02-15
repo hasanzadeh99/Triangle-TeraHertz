@@ -2,152 +2,114 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity uart_system is
-    Port (
-        clk           : in  STD_LOGIC;
-        reset         : in  STD_LOGIC;
-        uart_tx_pin   : out STD_LOGIC;
-        -- Debug LEDs
-        led_0         : out STD_LOGIC;
-        led_1         : out STD_LOGIC;
-        led_2         : out STD_LOGIC;
-        led_3         : out STD_LOGIC
+entity UART_Test is
+    Port ( 
+        clk_in  : in  STD_LOGIC;  -- 12MHz clock from CMOD S7
+        reset   : in  STD_LOGIC;  -- Active high reset
+        uart_tx : out STD_LOGIC;  -- UART TX pin
+        led_0   : out STD_LOGIC   -- LED for status
     );
-end uart_system;
+end UART_Test;
 
-architecture Behavioral of uart_system is
-    -- Constants for UART configuration
-    constant CLK_FREQ    : integer := 100_000_000;  -- 100 MHz
-    constant BAUD_RATE   : integer := 115_200;
-    constant BIT_PERIOD  : integer := CLK_FREQ / BAUD_RATE;
+architecture Behavioral of UART_Test is
+    -- Constants for UART
+    constant CLKS_PER_BIT : integer := 1250;    -- 12MHz/9600 baud
+    constant TEST_STRING  : std_logic_vector(31 downto 0) := X"74657374"; -- "test"
+    constant ONE_SEC     : integer := 12_000_000; -- 1 second at 12MHz
     
-    -- UART transmitter states
-    type uart_state_type is (IDLE, START_BIT, DATA_BITS, STOP_BIT);
-    signal uart_state : uart_state_type := IDLE;
+    -- State machine
+    type state_type is (IDLE, START_BIT, DATA_BITS, STOP_BIT, WAIT_INTERVAL);
+    signal state : state_type := IDLE;
     
-    -- UART control signals
-    signal tx_start      : STD_LOGIC := '0';
-    signal tx_busy       : STD_LOGIC := '0';
-    signal tx_done       : STD_LOGIC := '0';
-    signal tx_data       : STD_LOGIC_VECTOR(7 downto 0) := x"41"; -- Default 'A'
-    signal uart_tx_reg   : STD_LOGIC := '1';  -- Internal register for UART TX
-    
-    -- Counters and internal registers
+    -- Control signals
     signal bit_counter   : integer range 0 to 7 := 0;
-    signal period_counter: integer range 0 to BIT_PERIOD-1 := 0;
-    signal tx_data_reg   : STD_LOGIC_VECTOR(7 downto 0);
+    signal char_counter  : integer range 0 to 3 := 0;
+    signal clk_counter   : integer range 0 to CLKS_PER_BIT-1 := 0;
+    signal interval_counter : integer range 0 to ONE_SEC := 0;
+    signal current_byte  : std_logic_vector(7 downto 0);
     
-    -- Test pattern signals
-    signal send_counter  : integer range 0 to CLK_FREQ := 0;  -- 1-second counter
-    signal test_pattern  : STD_LOGIC_VECTOR(31 downto 0) := x"41424344"; -- "ABCD"
-    signal pattern_index : integer range 0 to 3 := 0;
-
 begin
-    -- Connect internal register to output pin
-    uart_tx_pin <= uart_tx_reg;
-
-    -- Main UART transmission process
-    process(clk, reset)
+    -- LED indicates transmission
+    led_0 <= '1' when state /= IDLE and state /= WAIT_INTERVAL else '0';
+    
+    process(clk_in)
     begin
-        if reset = '1' then
-            uart_state <= IDLE;
-            uart_tx_reg <= '1';  -- Line idle state is high
-            tx_busy <= '0';
-            tx_done <= '0';
-            bit_counter <= 0;
-            period_counter <= 0;
-            led_0 <= '0';
-            led_1 <= '0';
-            led_2 <= '0';
-            led_3 <= '0';
-            
-        elsif rising_edge(clk) then
-            -- Default LED states
-            led_0 <= tx_busy;      -- Shows when transmitting
-            led_1 <= uart_tx_reg;  -- Shows actual UART output
-            led_2 <= '0';
-            led_3 <= tx_done;      -- Pulses when byte is sent
-            
-            case uart_state is
-                when IDLE =>
-                    uart_tx_reg <= '1';
-                    tx_done <= '0';
-                    
-                    if tx_start = '1' then
-                        uart_state <= START_BIT;
-                        tx_data_reg <= tx_data;
-                        tx_busy <= '1';
-                        period_counter <= 0;
-                        led_2 <= '1';  -- Indicates start of new byte
-                    end if;
-
-                when START_BIT =>
-                    uart_tx_reg <= '0';
-                    
-                    if period_counter < BIT_PERIOD-1 then
-                        period_counter <= period_counter + 1;
-                    else
-                        uart_state <= DATA_BITS;
-                        period_counter <= 0;
-                        bit_counter <= 0;
-                    end if;
-
-                when DATA_BITS =>
-                    uart_tx_reg <= tx_data_reg(bit_counter);
-                    
-                    if period_counter < BIT_PERIOD-1 then
-                        period_counter <= period_counter + 1;
-                    else
-                        period_counter <= 0;
-                        
-                        if bit_counter < 7 then
-                            bit_counter <= bit_counter + 1;
-                        else
-                            uart_state <= STOP_BIT;
+        if rising_edge(clk_in) then
+            if reset = '1' then
+                state <= IDLE;
+                uart_tx <= '1';
+                bit_counter <= 0;
+                char_counter <= 0;
+                clk_counter <= 0;
+                interval_counter <= 0;
+                current_byte <= TEST_STRING(31 downto 24);
+                
+            else
+                case state is
+                    when IDLE =>
+                        uart_tx <= '1';
+                        if char_counter < 4 then
+                            state <= START_BIT;
+                            clk_counter <= 0;
+                            case char_counter is
+                                when 0 => current_byte <= TEST_STRING(31 downto 24);
+                                when 1 => current_byte <= TEST_STRING(23 downto 16);
+                                when 2 => current_byte <= TEST_STRING(15 downto 8);
+                                when 3 => current_byte <= TEST_STRING(7 downto 0);
+                                when others => null;
+                            end case;
                         end if;
-                    end if;
+                        
+                    when START_BIT =>
+                        uart_tx <= '0';
+                        if clk_counter < CLKS_PER_BIT-1 then
+                            clk_counter <= clk_counter + 1;
+                        else
+                            state <= DATA_BITS;
+                            clk_counter <= 0;
+                            bit_counter <= 0;
+                        end if;
+                        
+                    when DATA_BITS =>
+                        uart_tx <= current_byte(bit_counter);
+                        if clk_counter < CLKS_PER_BIT-1 then
+                            clk_counter <= clk_counter + 1;
+                        else
+                            clk_counter <= 0;
+                            if bit_counter < 7 then
+                                bit_counter <= bit_counter + 1;
+                            else
+                                state <= STOP_BIT;
+                            end if;
+                        end if;
+                        
+                    when STOP_BIT =>
+                        uart_tx <= '1';
+                        if clk_counter < CLKS_PER_BIT-1 then
+                            clk_counter <= clk_counter + 1;
+                        else
+                            clk_counter <= 0;
+                            if char_counter < 3 then
+                                char_counter <= char_counter + 1;
+                                state <= IDLE;
+                            else
+                                char_counter <= 0;
+                                state <= WAIT_INTERVAL;
+                                interval_counter <= 0;
+                            end if;
+                        end if;
 
-                when STOP_BIT =>
-                    uart_tx_reg <= '1';
-                    
-                    if period_counter < BIT_PERIOD-1 then
-                        period_counter <= period_counter + 1;
-                    else
-                        uart_state <= IDLE;
-                        tx_busy <= '0';
-                        tx_done <= '1';
-                    end if;
-            end case;
-        end if;
-    end process;
-
-    -- Test pattern generation process
-    process(clk, reset)
-    begin
-        if reset = '1' then
-            send_counter <= 0;
-            pattern_index <= 0;
-            tx_start <= '0';
-            
-        elsif rising_edge(clk) then
-            tx_start <= '0';  -- Default state
-            
-            if tx_busy = '0' then  -- Only start new transmission when not busy
-                if send_counter < CLK_FREQ/4 then  -- Send every 0.25 seconds
-                    send_counter <= send_counter + 1;
-                else
-                    send_counter <= 0;
-                    tx_data <= test_pattern(31-8*pattern_index downto 24-8*pattern_index);
-                    tx_start <= '1';
-                    
-                    if pattern_index < 3 then
-                        pattern_index <= pattern_index + 1;
-                    else
-                        pattern_index <= 0;
-                    end if;
-                end if;
+                    when WAIT_INTERVAL =>
+                        uart_tx <= '1';
+                        if interval_counter < ONE_SEC - 1 then
+                            interval_counter <= interval_counter + 1;
+                        else
+                            interval_counter <= 0;
+                            state <= IDLE;
+                        end if;
+                end case;
             end if;
         end if;
     end process;
-
+    
 end Behavioral;
