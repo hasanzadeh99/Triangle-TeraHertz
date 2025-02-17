@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sun Feb  9 18:33:25 2025
+-- Date        : Sun Feb  9 18:33:03 2025
 -- Host        : DESKTOP-QDR8KCM running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub {E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl
---               code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0_stub.vhdl}
+-- Command     : write_vhdl -force -mode synth_stub -rename_top div_gen_0 -prefix
+--               div_gen_0_ div_gen_0_stub.vhdl
 -- Design      : div_gen_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s25csga225-1

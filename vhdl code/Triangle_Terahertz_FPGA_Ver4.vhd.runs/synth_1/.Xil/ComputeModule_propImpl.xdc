@@ -21,6 +21,8 @@ set_property src_info {type:XDC file:1 line:49 export:INPUT save:INPUT read:READ
 set_property -dict {PACKAGE_PIN H4 IOSTANDARD LVCMOS33} [get_ports {dout_tdata[19]}]
 set_property src_info {type:XDC file:1 line:51 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN F3 IOSTANDARD LVCMOS33} [get_ports data_ready]
+set_property src_info {type:XDC file:1 line:60 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN L12   IOSTANDARD LVCMOS33 } [get_ports { uart_tx }]; #IO_L6N_T0_D08_VREF_14 Sch=uart_rxd_out
 set_property src_info {type:XDC file:1 line:71 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN M4 IOSTANDARD LVCMOS33} [get_ports pulse]
 set_property src_info {type:XDC file:1 line:73 export:INPUT save:INPUT read:READ} [current_design]
