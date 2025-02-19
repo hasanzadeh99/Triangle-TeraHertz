@@ -100,6 +100,9 @@ architecture tb of tb_div_gen_0 is
   signal s_axis_divisor_tvalid    : std_logic := '0';  -- TVALID for channel B
   signal s_axis_divisor_tdata     : std_logic_vector(55 downto 0) := (others => 'X');  -- TDATA for channel B
 
+  -- Master channel DOUT inputs
+  signal m_axis_dout_tready : std_logic := '0';  -- TREADY for channel DOUT
+
 
   -- Breakout signals. These signals are the application-specific operands which
   -- become subfields of the TDATA fields.
@@ -110,6 +113,10 @@ architecture tb of tb_div_gen_0 is
   -----------------------------------------------------------------------
   -- DUT output signals
   -----------------------------------------------------------------------
+
+  -- Slave channels outputs
+  signal s_axis_dividend_tready    : std_logic := '0';  -- TREADY for channel A
+  signal s_axis_divisor_tready    : std_logic := '0';  -- TREADY for channel B
 
   -- Master channel DOUT outputs
   signal m_axis_dout_tvalid : std_logic := '0';  -- TVALID for channel DOUT
@@ -180,10 +187,13 @@ begin
     port map (
       aclk                => aclk,
       s_axis_dividend_tvalid     => s_axis_dividend_tvalid,
+      s_axis_dividend_tready     => s_axis_dividend_tready,
       s_axis_dividend_tdata      => s_axis_dividend_tdata,
       s_axis_divisor_tvalid     => s_axis_divisor_tvalid,
+      s_axis_divisor_tready     => s_axis_divisor_tready,
       s_axis_divisor_tdata      => s_axis_divisor_tdata,
       m_axis_dout_tvalid  => m_axis_dout_tvalid,
+      m_axis_dout_tready  => m_axis_dout_tready,
       m_axis_dout_tdata   => m_axis_dout_tdata
       );
 
@@ -217,9 +227,13 @@ begin
     variable ip_divisor_index       : integer   := 0;
     variable dividend_tvalid_nxt     : std_logic := '0';
     variable divisor_tvalid_nxt     : std_logic := '0';
+    variable dout_tready_nxt  : std_logic := '0';
     variable phase2_cycles : integer := 1;
     variable phase2_count  : integer := 0;
     constant PHASE2_LIMIT  : integer := 30;
+    variable phase3_cycles : integer := 1;
+    variable phase3_count  : integer := 0;
+    constant PHASE3_LIMIT  : integer := 30;
   begin
 
     -- Test is stopped in clock_gen process, use endless loop here
@@ -229,36 +243,45 @@ begin
       wait until rising_edge(aclk);
       wait for T_HOLD;
 
-      -- Drive AXI TVALID signals to demonstrate different types of operation
+      -- Drive AXI handshake signals to demonstrate different types of operation
       case cycles is  -- do different types of operation at different phases of the test
         when 0 to PHASE_CYCLES * 1 - 1 =>
-          -- Phase 1: inputs always valid, no missing input data
+          -- Phase 1: full throughput, no backpressure
           dividend_tvalid_nxt    := '1';
           divisor_tvalid_nxt    := '1';
+          dout_tready_nxt := '1';
         when PHASE_CYCLES * 1 to PHASE_CYCLES * 2 - 1 =>
-          -- Phase 2: deprive channel A of valid transactions at an increasing rate
+          -- Phase 2: apply increasing amounts of backpressure
+          dividend_tvalid_nxt    := '1';
           divisor_tvalid_nxt    := '1';
           if phase2_count < phase2_cycles then
-            dividend_tvalid_nxt := '0';
+            dout_tready_nxt := '0';
           else
-            dividend_tvalid_nxt := '1';
+            dout_tready_nxt := '1';
           end if;
           phase2_count := phase2_count + 1;
-          if phase2_count >= PHASE2_LIMIT then
+          if phase2_count = PHASE2_LIMIT then
             phase2_count  := 0;
             phase2_cycles := phase2_cycles + 1;
           end if;
         when PHASE_CYCLES * 2 to PHASE_CYCLES * 3 - 1 =>
-          -- Phase 3: deprive channel A of 1 out of 2 transactions, and channel B of 1 out of 3 transactions
-          if cycles mod 2 = 0 then
-            dividend_tvalid_nxt := '0';
+          -- Phase 3: deprive channel A of valid transactions at an increasing rate
+          divisor_tvalid_nxt    := '1';
+          dout_tready_nxt := '1';
+          if phase3_count < phase3_cycles then
+            -- AXI protocol forbids changing TVALID from high to low if TREADY is low
+            if s_axis_dividend_tvalid = '0' or s_axis_dividend_tready = '1' then
+              dividend_tvalid_nxt := '0';
+            end if;
           else
             dividend_tvalid_nxt := '1';
           end if;
-          if cycles mod 3 = 0 then
-            divisor_tvalid_nxt := '0';
-          else
-            divisor_tvalid_nxt := '1';
+          if phase3_count >= phase3_cycles or s_axis_dividend_tvalid = '0' or s_axis_dividend_tready = '1' then
+            phase3_count := phase3_count + 1;
+            if phase3_count >= PHASE3_LIMIT then
+              phase3_count  := 0;
+              phase3_cycles := phase3_cycles + 1;
+            end if;
           end if;
         when others =>
           -- Test will stop imminently - do nothing
@@ -268,33 +291,36 @@ begin
       -- Drive handshake signals with local variable values
       s_axis_dividend_tvalid <= dividend_tvalid_nxt;
       s_axis_divisor_tvalid <= divisor_tvalid_nxt;
+      m_axis_dout_tready <= dout_tready_nxt;
 
       -- Drive AXI slave channel A payload
       -- Drive 'X's on payload signals when not valid
+      -- Payload only changes when TVALID goes high or when a transaction just occurred
       if dividend_tvalid_nxt /= '1' then
         s_axis_dividend_tdata <= (others => INVALID);
-      else
+      elsif s_axis_dividend_tvalid /= '1' or (s_axis_dividend_tvalid = '1' and s_axis_dividend_tready = '1') then
         -- TDATA: This holds the dividend operand. It is 64 bits wide and byte-aligned with the operand in the LSBs
         s_axis_dividend_tdata <= std_logic_vector(resize(signed(IP_dividend_DATA(ip_dividend_index)),64));
       end if;
 
       -- Drive AXI slave channel B payload
       -- Drive 'X's on payload signals when not valid
+      -- Payload only changes when TVALID goes high or when a transaction just occurred
       if divisor_tvalid_nxt /= '1' then
         s_axis_divisor_tdata <= (others => INVALID);
-      else
+      elsif s_axis_divisor_tvalid /= '1' or (s_axis_divisor_tvalid = '1' and s_axis_divisor_tready = '1') then
         -- TDATA: Holds the divisor operand. It is 56 bits wide and byte-aligned with the operand in the LSBs
             s_axis_divisor_tdata <= std_logic_vector(resize(signed(IP_divisor_DATA(ip_divisor_index)),56));
       end if;
 
       -- Increment input data indices
-      if dividend_tvalid_nxt = '1' then
+      if dividend_tvalid_nxt = '1' and s_axis_dividend_tready = '1' then
         ip_dividend_index := ip_dividend_index + 1;
         if ip_dividend_index = IP_dividend_DEPTH then
           ip_dividend_index := 0;
         end if;
       end if;
-      if divisor_tvalid_nxt = '1' then
+      if divisor_tvalid_nxt = '1' and s_axis_divisor_tready  = '1' then
         ip_divisor_index := ip_divisor_index + 1;
         if ip_divisor_index = IP_divisor_DEPTH then
           ip_divisor_index := 0;
@@ -311,6 +337,10 @@ begin
 
   check_outputs : process
     variable check_ok : boolean := true;
+    -- Previous values of DOUT channel signals
+    variable dout_tvalid_prev : std_logic := '0';
+    variable dout_tready_prev : std_logic := '0';
+    variable dout_tdata_prev  : std_logic_vector(71 downto 0) := (others => '0');
   begin
 
     -- Check outputs T_STROBE time after rising edge of clock
@@ -321,6 +351,7 @@ begin
     -- which would make this demonstration testbench unwieldy.
     -- Instead, check the protocol of the DOUT channel:
     -- check that the payload is valid (not X) when TVALID is high
+    -- and check that the payload does not change while TVALID is high until TREADY goes high
 
     if m_axis_dout_tvalid = '1' then
       if is_x(m_axis_dout_tdata) then
@@ -328,10 +359,24 @@ begin
         check_ok := false;
       end if;
 
+      if dout_tvalid_prev = '1' and dout_tready_prev = '0' then  -- payload must be the same as last cycle
+        if m_axis_dout_tdata /= dout_tdata_prev then
+          report "ERROR: m_axis_dout_tdata changed while m_axis_dout_tvalid was high and m_axis_dout_tready was low" severity error;
+          check_ok := false;
+        end if;
+      end if;
+
     end if;
 
     assert check_ok
       report "ERROR: terminating test with failures." severity failure;
+
+    -- Record payload values for checking next clock cycle
+    if check_ok then
+      dout_tvalid_prev := m_axis_dout_tvalid;
+      dout_tready_prev := m_axis_dout_tready;
+      dout_tdata_prev  := m_axis_dout_tdata;
+    end if;
 
   end process check_outputs;
 

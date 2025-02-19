@@ -66,6 +66,7 @@ ENTITY div_gen_0 IS
     s_axis_dividend_tready : OUT STD_LOGIC;
     s_axis_dividend_tdata : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
     m_axis_dout_tvalid : OUT STD_LOGIC;
+    m_axis_dout_tready : IN STD_LOGIC;
     m_axis_dout_tdata : OUT STD_LOGIC_VECTOR(71 DOWNTO 0)
   );
 END div_gen_0;
@@ -124,7 +125,8 @@ ARCHITECTURE div_gen_0_arch OF div_gen_0 IS
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_dout_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_DOUT TDATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_dout_tvalid: SIGNAL IS "XIL_INTERFACENAME M_AXIS_DOUT, TDATA_NUM_BYTES 9, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF m_axis_dout_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_DOUT TREADY";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_dout_tvalid: SIGNAL IS "XIL_INTERFACENAME M_AXIS_DOUT, TDATA_NUM_BYTES 9, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_dout_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_DOUT TVALID";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_dividend_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_DIVIDEND TDATA";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_dividend_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_DIVIDEND TREADY";
@@ -142,7 +144,7 @@ BEGIN
       C_XDEVICEFAMILY => "spartan7",
       C_HAS_ARESETN => 0,
       C_HAS_ACLKEN => 0,
-      C_LATENCY => 74,
+      C_LATENCY => 76,
       ALGORITHM_TYPE => 1,
       DIVISOR_WIDTH => 56,
       DIVIDEND_WIDTH => 64,
@@ -151,7 +153,7 @@ BEGIN
       FRACTIONAL_B => 1,
       FRACTIONAL_WIDTH => 7,
       C_HAS_DIV_BY_ZERO => 0,
-      C_THROTTLE_SCHEME => 4,
+      C_THROTTLE_SCHEME => 1,
       C_TLAST_RESOLUTION => 0,
       C_HAS_S_AXIS_DIVISOR_TUSER => 0,
       C_HAS_S_AXIS_DIVISOR_TLAST => 0,
@@ -179,7 +181,7 @@ BEGIN
       s_axis_dividend_tlast => '0',
       s_axis_dividend_tdata => s_axis_dividend_tdata,
       m_axis_dout_tvalid => m_axis_dout_tvalid,
-      m_axis_dout_tready => '0',
+      m_axis_dout_tready => m_axis_dout_tready,
       m_axis_dout_tdata => m_axis_dout_tdata
     );
 END div_gen_0_arch;

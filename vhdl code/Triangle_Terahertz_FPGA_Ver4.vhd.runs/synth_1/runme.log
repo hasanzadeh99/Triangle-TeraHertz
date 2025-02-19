@@ -9,35 +9,33 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source ComputeModule.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 352.781 ; gain = 55.652
 Command: synth_design -top ComputeModule -part xc7s25csga225-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: [Device 21-403] Loading part xc7s25csga225-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7460 
+INFO: Helper process launched with PID 10928 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 786.086 ; gain = 176.836
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 786.348 ; gain = 177.605
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ComputeModule' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:22]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-2888-DESKTOP-QDR8KCM/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'clock_gen' of component 'clk_wiz_0' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-2888-DESKTOP-QDR8KCM/realtime/clk_wiz_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'div_gen_0' declared at 'E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-2888-DESKTOP-QDR8KCM/realtime/div_gen_0_stub.vhdl:5' bound to instance 'div_inst' of component 'div_gen_0' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:119]
-INFO: [Synth 8-638] synthesizing module 'div_gen_0' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-2888-DESKTOP-QDR8KCM/realtime/div_gen_0_stub.vhdl:20]
-WARNING: [Synth 8-614] signal 'clk_ready' is read in the process but is not in the sensitivity list [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:133]
-WARNING: [Synth 8-614] signal 'clk_ready' is read in the process but is not in the sensitivity list [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:277]
-WARNING: [Synth 8-6014] Unused sequential element uart_tx_start_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:151]
-WARNING: [Synth 8-6014] Unused sequential element next_S_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:185]
-WARNING: [Synth 8-6014] Unused sequential element debug_S_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:196]
-WARNING: [Synth 8-6014] Unused sequential element debug_P_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:197]
-WARNING: [Synth 8-6014] Unused sequential element digit1_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:229]
-WARNING: [Synth 8-6014] Unused sequential element digit2_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:230]
-WARNING: [Synth 8-6014] Unused sequential element digit3_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:231]
-WARNING: [Synth 8-6014] Unused sequential element temp_fraction_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:240]
-INFO: [Synth 8-256] done synthesizing module 'ComputeModule' (1#1) [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'ComputeModule' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:21]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:28]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:36]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:37]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:38]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:39]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-17084-DESKTOP-QDR8KCM/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'clock_gen' of component 'clk_wiz_0' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-17084-DESKTOP-QDR8KCM/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'div_gen_0' declared at 'E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-17084-DESKTOP-QDR8KCM/realtime/div_gen_0_stub.vhdl:5' bound to instance 'div_inst' of component 'div_gen_0' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-17084-DESKTOP-QDR8KCM/realtime/div_gen_0_stub.vhdl:21]
+WARNING: [Synth 8-614] signal 'clk_ready' is read in the process but is not in the sensitivity list [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:121]
+WARNING: [Synth 8-6014] Unused sequential element a_squared_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element s_term_reg was removed.  [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'ComputeModule' (1#1) [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:21]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 850.480 ; gain = 241.230
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 850.371 ; gain = 241.629
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -50,10 +48,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 850.480 ; gain = 241.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 850.371 ; gain = 241.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 850.480 ; gain = 241.230
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 850.371 ; gain = 241.629
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -65,6 +63,7 @@ Parsing XDC File [e:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/T
 Finished Parsing XDC File [e:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0/div_gen_0_in_context.xdc] for cell 'div_inst'
 Parsing XDC File [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc]
 WARNING: [Vivado 12-507] No nets matched 'reset_IBUF'. [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'uart_tx'. [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc:60]
 Finished Parsing XDC File [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ComputeModule_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/constrs_1/new/Cmod-S7-25-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ComputeModule_propImpl.xdc].
@@ -73,21 +72,21 @@ Parsing XDC File [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/T
 Finished Parsing XDC File [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 979.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 978.621 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 979.215 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 978.621 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'div_inst' at clock pin 'aclk' is different from the actual clock period '8.330', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 982.273 ; gain = 373.023
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 981.777 ; gain = 373.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s25csga225-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 982.273 ; gain = 373.023
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 981.777 ; gain = 373.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -97,21 +96,21 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in. (constraint file  {e:/
 Applied set_property DONT_TOUCH = true for clock_gen. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for div_inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 982.273 ; gain = 373.023
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 981.777 ; gain = 373.035
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 's_axis_dividend_tvalid_reg' into 's_axis_divisor_tvalid_reg' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:125]
-INFO: [Synth 8-802] inferred FSM for state register 'uart_state_reg' in module 'ComputeModule'
+INFO: [Synth 8-4471] merging register 's_axis_dividend_tvalid_reg' into 's_axis_divisor_tvalid_reg' [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:112]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ComputeModule'
+INFO: [Synth 8-6159] Found Keep on FSM register 'current_state_reg' in module 'ComputeModule', re-encoding will not be performed
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-               uart_idle |                               00 |                               00
-          uart_start_bit |                               01 |                               01
-          uart_data_bits |                               10 |                               10
-           uart_stop_bit |                               11 |                               11
+*
+                    idle |                               00 |                               00
+               capturing |                               01 |                               01
+                dividing |                               10 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'uart_state_reg' using encoding 'sequential' in module 'ComputeModule'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 982.273 ; gain = 373.023
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 981.777 ; gain = 373.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -124,43 +123,29 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     64 Bit       Adders := 1     
-	   2 Input     56 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input     56 Bit       Adders := 2     
 	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               64 Bit    Registers := 2     
-	               56 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               56 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
 	               20 Bit    Registers := 1     
-	               11 Bit    Registers := 2     
-	               10 Bit    Registers := 1     
-	                8 Bit    Registers := 8     
-	                7 Bit    Registers := 4     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 8     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
 +---Muxes : 
-	   6 Input     64 Bit        Muxes := 1     
-	   6 Input     56 Bit        Muxes := 1     
-	   2 Input     31 Bit        Muxes := 1     
-	   6 Input     11 Bit        Muxes := 1     
-	   2 Input     11 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 3     
+	   2 Input     64 Bit        Muxes := 4     
+	   4 Input     56 Bit        Muxes := 2     
+	   2 Input     56 Bit        Muxes := 3     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
 	   4 Input     11 Bit        Muxes := 1     
-	   6 Input     10 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 2     
-	   6 Input      4 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	   4 Input      3 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
 	   4 Input      2 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 12    
-	   2 Input      1 Bit        Muxes := 8     
-	   4 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -171,43 +156,29 @@ Hierarchical RTL Component report
 Module ComputeModule 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     64 Bit       Adders := 1     
-	   2 Input     56 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input     56 Bit       Adders := 2     
 	   2 Input      7 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               64 Bit    Registers := 2     
-	               56 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               56 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
 	               20 Bit    Registers := 1     
-	               11 Bit    Registers := 2     
-	               10 Bit    Registers := 1     
-	                8 Bit    Registers := 8     
-	                7 Bit    Registers := 4     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 8     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
 +---Muxes : 
-	   6 Input     64 Bit        Muxes := 1     
-	   6 Input     56 Bit        Muxes := 1     
-	   2 Input     31 Bit        Muxes := 1     
-	   6 Input     11 Bit        Muxes := 1     
-	   2 Input     11 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 3     
+	   2 Input     64 Bit        Muxes := 4     
+	   4 Input     56 Bit        Muxes := 2     
+	   2 Input     56 Bit        Muxes := 3     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
 	   4 Input     11 Bit        Muxes := 1     
-	   6 Input     10 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 2     
-	   6 Input      4 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	   4 Input      3 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
 	   4 Input      2 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 12    
-	   2 Input      1 Bit        Muxes := 8     
-	   4 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -224,67 +195,12 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-DSP Report: Generating DSP output_chars_reg[6]3, operation Mode is: (A:0x3e8)*B.
-DSP Report: operator output_chars_reg[6]3 is absorbed into DSP output_chars_reg[6]3.
 DSP Report: Generating DSP S2, operation Mode is: A*B.
 DSP Report: operator S2 is absorbed into DSP S2.
 DSP Report: Generating DSP S1, operation Mode is: A*B.
 DSP Report: operator S1 is absorbed into DSP S1.
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[10][7]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[9][7]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[5][7]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[1][7]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[0][7]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[10][6]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[9][6]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[8][6]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[7][6]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[5][6]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[4][6]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[3][6]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[1][6]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[0][6]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[10][5]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[9][5]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[8][5]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[7][5]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[5][5]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[4][5]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[3][5]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[1][5]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[0][5]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[10][4]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[9][4]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[8][4]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[7][4]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[5][4]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[4][4]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[3][4]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[1][4]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[0][4]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[10][3]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[9][3]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[5][3]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[1][3]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[0][3]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[10][2]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[9][2]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[5][2]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[1][2]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[0][2]' (FDE) to 'output_chars_reg[10][1]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[10][1]' (FDE) to 'output_chars_reg[9][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[9][1]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[5][1]' (FDE) to 'output_chars_reg[9][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[1][1]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[0][1]' (FDE) to 'output_chars_reg[10][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[10][0]' (FDE) to 'output_chars_reg[5][0]'
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[9][0]' (FDE) to 'output_chars_reg[1][0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_chars_reg[5][0] )
-INFO: [Synth 8-3886] merging instance 'output_chars_reg[1][0]' (FDE) to 'output_chars_reg[0][0]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\output_chars_reg[0][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pulse_counter_reg[10] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:00 . Memory (MB): peak = 982.273 ; gain = 373.023
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 981.777 ; gain = 373.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -294,7 +210,6 @@ DSP: Preliminary Mapping  Report (see note below)
 +--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name   | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|ComputeModule | (A:0x3e8)*B | 8      | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |ComputeModule | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |ComputeModule | A*B         | 24     | 11     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
@@ -303,7 +218,6 @@ Note: The table above is a preliminary report that shows the DSPs inferred at th
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:141]
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -317,13 +231,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen/clk_out' to pin
 WARNING: [Synth 8-565] redefining clock 'clk_in'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:30 . Memory (MB): peak = 999.793 ; gain = 390.543
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 993.055 ; gain = 384.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:32 . Memory (MB): peak = 1024.184 ; gain = 414.934
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1026.777 ; gain = 418.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -334,9 +248,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/new/ComputeModule.vhd:141]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1087.156 ; gain = 477.906
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 1029.344 ; gain = 420.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -360,7 +273,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:41 . Memory (MB): peak = 1092.547 ; gain = 483.297
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1033.168 ; gain = 424.426
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -373,7 +286,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:41 . Memory (MB): peak = 1092.547 ; gain = 483.297
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1033.168 ; gain = 424.426
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -385,25 +298,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 1092.547 ; gain = 483.297
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1033.168 ; gain = 424.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 1092.547 ; gain = 483.297
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1033.168 ; gain = 424.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 1092.547 ; gain = 483.297
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1033.168 ; gain = 424.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 1092.547 ; gain = 483.297
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1033.168 ; gain = 424.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -423,51 +336,49 @@ Report Cell Usage:
 +------+-----------------+------+
 |1     |clk_wiz_0_bbox_0 |     1|
 |2     |div_gen_0_bbox_1 |     1|
-|3     |CARRY4           |   242|
-|4     |DSP48E1          |     3|
-|5     |LUT1             |    41|
-|6     |LUT2             |   410|
-|7     |LUT3             |   280|
-|8     |LUT4             |   195|
-|9     |LUT5             |   181|
-|10    |LUT6             |   441|
-|11    |FDCE             |   178|
-|12    |FDPE             |     1|
-|13    |FDRE             |   172|
-|14    |IBUF             |    15|
-|15    |OBUF             |    26|
+|3     |CARRY4           |    30|
+|4     |DSP48E1          |     2|
+|5     |LUT1             |     1|
+|6     |LUT2             |   188|
+|7     |LUT3             |   125|
+|8     |LUT4             |    31|
+|9     |LUT5             |    68|
+|10    |LUT6             |    14|
+|11    |FDCE             |   246|
+|12    |FDRE             |   240|
+|13    |IBUF             |    15|
+|14    |OBUF             |    25|
 +------+-----------------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |  2262|
+|1     |top      |       |  1062|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 1092.547 ; gain = 483.297
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1033.168 ; gain = 424.426
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:36 . Memory (MB): peak = 1092.547 ; gain = 351.504
-Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:42 . Memory (MB): peak = 1092.547 ; gain = 483.297
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1033.168 ; gain = 293.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1033.168 ; gain = 424.426
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 245 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'ComputeModule' is not ideal for floorplanning, since the cellview 'ComputeModule' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1092.547 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1033.168 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-78 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:57 . Memory (MB): peak = 1092.547 ; gain = 704.332
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1092.547 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 1033.168 ; gain = 644.332
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1033.168 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-WARNING: [Runs 36-115] Could not delete directory 'E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-2888-DESKTOP-QDR8KCM/dcp0'.
+WARNING: [Runs 36-115] Could not delete directory 'E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/.Xil/Vivado-17084-DESKTOP-QDR8KCM/dcp0'.
 INFO: [Common 17-1381] The checkpoint 'E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.runs/synth_1/ComputeModule.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ComputeModule_utilization_synth.rpt -pb ComputeModule_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 17 18:51:12 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 10:44:44 2025...
