@@ -61,11 +61,11 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED_Pin GPIO_PIN_13
 #define LED_GPIO_Port GPIOC
-#define data17_Pin GPIO_PIN_1
+#define data17_Pin GPIO_PIN_0
 #define data17_GPIO_Port GPIOA
-#define data18_Pin GPIO_PIN_2
+#define data18_Pin GPIO_PIN_1
 #define data18_GPIO_Port GPIOA
-#define data19_Pin GPIO_PIN_3
+#define data19_Pin GPIO_PIN_4
 #define data19_GPIO_Port GPIOA
 #define MCLK_Pin GPIO_PIN_5
 #define MCLK_GPIO_Port GPIOA

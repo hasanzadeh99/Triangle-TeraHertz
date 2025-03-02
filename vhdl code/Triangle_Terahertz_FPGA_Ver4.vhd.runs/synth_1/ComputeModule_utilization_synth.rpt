@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Feb 19 10:44:44 2025
+| Date         : Mon Feb 24 10:26:49 2025
 | Host         : DESKTOP-QDR8KCM running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ComputeModule_utilization_synth.rpt -pb ComputeModule_utilization_synth.pb
 | Design       : ComputeModule
@@ -27,18 +27,18 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+------+-------+-----------+-------+
-|        Site Type        | Used | Fixed | Available | Util% |
-+-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  427 |     0 |     14600 |  2.92 |
-|   LUT as Logic          |  427 |     0 |     14600 |  2.92 |
-|   LUT as Memory         |    0 |     0 |      5000 |  0.00 |
-| Slice Registers         |  486 |     0 |     29200 |  1.66 |
-|   Register as Flip Flop |  486 |     0 |     29200 |  1.66 |
-|   Register as Latch     |    0 |     0 |     29200 |  0.00 |
-| F7 Muxes                |    0 |     0 |      7300 |  0.00 |
-| F8 Muxes                |    0 |     0 |      3650 |  0.00 |
-+-------------------------+------+-------+-----------+-------+
++-------------------------+-------+-------+-----------+-------+
+|        Site Type        |  Used | Fixed | Available | Util% |
++-------------------------+-------+-------+-----------+-------+
+| Slice LUTs*             |  4577 |     0 |     14600 | 31.35 |
+|   LUT as Logic          |  4577 |     0 |     14600 | 31.35 |
+|   LUT as Memory         |     0 |     0 |      5000 |  0.00 |
+| Slice Registers         | 12445 |     0 |     29200 | 42.62 |
+|   Register as Flip Flop | 12445 |     0 |     29200 | 42.62 |
+|   Register as Latch     |     0 |     0 |     29200 |  0.00 |
+| F7 Muxes                |  1632 |     0 |      7300 | 22.36 |
+| F8 Muxes                |   816 |     0 |      3650 | 22.36 |
++-------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -55,9 +55,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 246   |          Yes |           - |        Reset |
+| 12445 |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 240   |          Yes |       Reset |            - |
+| 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -77,12 +77,11 @@ Table of Contents
 3. DSP
 ------
 
-+----------------+------+-------+-----------+-------+
-|    Site Type   | Used | Fixed | Available | Util% |
-+----------------+------+-------+-----------+-------+
-| DSPs           |    2 |     0 |        80 |  2.50 |
-|   DSP48E1 only |    2 |       |           |       |
-+----------------+------+-------+-----------+-------+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |        80 |  0.00 |
++-----------+------+-------+-----------+-------+
 
 
 4. IO and GT Specific
@@ -113,7 +112,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |        12 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         3 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         3 |  0.00 |
@@ -143,22 +142,24 @@ Table of Contents
 7. Primitives
 -------------
 
-+----------+------+---------------------+
-| Ref Name | Used | Functional Category |
-+----------+------+---------------------+
-| FDCE     |  246 |        Flop & Latch |
-| FDRE     |  240 |        Flop & Latch |
-| LUT2     |  188 |                 LUT |
-| LUT3     |  125 |                 LUT |
-| LUT5     |   68 |                 LUT |
-| LUT4     |   31 |                 LUT |
-| CARRY4   |   30 |          CarryLogic |
-| OBUF     |   25 |                  IO |
-| IBUF     |   15 |                  IO |
-| LUT6     |   14 |                 LUT |
-| DSP48E1  |    2 |    Block Arithmetic |
-| LUT1     |    1 |                 LUT |
-+----------+------+---------------------+
++----------+-------+---------------------+
+| Ref Name |  Used | Functional Category |
++----------+-------+---------------------+
+| FDCE     | 12445 |        Flop & Latch |
+| LUT6     |  4396 |                 LUT |
+| MUXF7    |  1632 |               MuxFx |
+| MUXF8    |   816 |               MuxFx |
+| LUT3     |    70 |                 LUT |
+| LUT4     |    65 |                 LUT |
+| LUT5     |    35 |                 LUT |
+| LUT2     |    25 |                 LUT |
+| OBUF     |    20 |                  IO |
+| LUT1     |    20 |                 LUT |
+| IBUF     |    15 |                  IO |
+| CARRY4   |    14 |          CarryLogic |
+| OBUFT    |     5 |                  IO |
+| BUFG     |     1 |               Clock |
++----------+-------+---------------------+
 
 
 8. Black Boxes
@@ -167,7 +168,6 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
-| div_gen_0 |    1 |
 | clk_wiz_0 |    1 |
 +-----------+------+
 

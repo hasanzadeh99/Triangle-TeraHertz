@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 1
 create_project -in_memory -part xc7s25csga225-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -36,9 +36,6 @@ read_ip -quiet {{E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Tr
 set_property used_in_implementation false [get_files -all {{e:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{e:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{e:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
-
-read_ip -quiet {{E:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{e:/Dropbox/Rodgel/Projects/1402/Triangle-TeraHertz/vhdl code/Triangle_Terahertz_FPGA_Ver4.vhd.srcs/sources_1/ip/div_gen_0/div_gen_0_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

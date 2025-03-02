@@ -10,8 +10,8 @@ create_clock -period 83.330 -name clk_in -waveform {0.000 41.660} -add [get_port
 
 
 
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets reset_IBUF]
-
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets reset_IBUF]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets pulse_IBUF]
 
 ## Push Buttons
 set_property -dict {PACKAGE_PIN D2 IOSTANDARD LVCMOS33} [get_ports reset]
@@ -57,7 +57,7 @@ set_property -dict {PACKAGE_PIN F3 IOSTANDARD LVCMOS33} [get_ports data_ready]
 
 ## USB UART
 ## Note: Port names are from the perspoctive of the FPGA.
-set_property -dict { PACKAGE_PIN L12   IOSTANDARD LVCMOS33 } [get_ports { uart_tx }]; #IO_L6N_T0_D08_VREF_14 Sch=uart_rxd_out
+#set_property -dict { PACKAGE_PIN L12   IOSTANDARD LVCMOS33 } [get_ports { uart_tx }]; #IO_L6N_T0_D08_VREF_14 Sch=uart_rxd_out
 #set_property -dict { PACKAGE_PIN K15   IOSTANDARD LVCMOS33 } [get_ports { uart_rx }]; #IO_L5N_T0_D07_14 Sch=uart_txd_in
 
 ## Analog Inputs on PIO Pins 32 and 33
